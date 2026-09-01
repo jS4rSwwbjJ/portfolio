@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* .zen-kaku-gothic-new-light {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.zen-kaku-gothic-new-regular {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zen-kaku-gothic-new-medium {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+} */
+
+/*-----------------main-----------------*/
+
+.ka_txt {
+  margin: 10px 0 40px;
+}
+.ka_container {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat( auto-fill, minmax(90px,1fr) ) ;
+  gap: 16px;
+}
+.ka_container img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* modal */
+#js-Kmodal {
+  display: none;
+}
+#js-Kmodal.active {
+  z-index: 101;
+  display: initial;
+  position: fixed;
+  inset: 0;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+#js-Kmodal img {
+  max-width: min(80vw, var(--pc_mid-width));
+  max-height: 65vh;
+}
+.ka_container canvas {
+  cursor: pointer;
+  border-radius: 10px;
+}
+/*desctop版*/
+@media (min-width: 800px) {   
+#Kakurega {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+}

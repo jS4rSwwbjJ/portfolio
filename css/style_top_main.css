@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/* .zen-kaku-gothic-new-light {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.zen-kaku-gothic-new-regular {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zen-kaku-gothic-new-medium {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+} */
+
+/*-----------------main-----------------*/
+#topMovie {
+  margin: 7px clamp(16px, 2vw, 32px) 0;
+}
+#topMovie figure {
+  border-radius: 30px;
+  overflow: hidden;
+}
+#topMovie figure video {
+  width: 100%;
+  object-fit: cover;
+  height: 52vh;  /* pc=62vh */
+}
+.play_mov {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-end;
+  margin-top: 8px;
+  margin-right: 2px;
+}
+.play_mov p {
+  font-size: clamp(14px,1.75vw,20px);
+  font-weight: 500;
+}
+
+/* svg */
+.play_mov svg {
+  width: clamp(23px,2.8vw,31px);
+  height: auto;
+  overflow: visible;
+}
+.txtC_fill {
+  fill: var(--color-text);
+}
+.txtC_line {
+  fill: none;
+  stroke: var(--color-text);
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
+}
+
+/* クリック　youtube modal */
+.movie-dialog {
+  display: none;
+}
+.movie-dialog.is-show {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 101;
+}
+.movie-container {
+  width: calc(100% - max(16px, 20vw));
+  max-height: calc(100% - 20px);
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
+.movie-container iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* about */
+.mailCS_btn {
+  display: flex;
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+  margin: 25px auto 40px;
+}
+.copy_btn, .mailCS_btn a {
+  padding: 17px;
+  /* background-color: aliceblue; */  
+  border: solid 1px var(--color-line);
+}
+.copy_btn {
+  flex-grow: 0;
+  border-top-left-radius: 99px;
+  border-bottom-left-radius: 99px;
+  border-right: none;
+}
+.copy_btn figure, .contact_list_copy figure {
+  width: 15px;
+}
+.copy_btn img, .contact_list_copy img {
+  overflow: visible;
+}
+.mailCS_btn a {
+  color: var(--color-text);
+  flex-grow: 1;
+  line-height: 1;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 99px;
+  margin-left: -5px;
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  padding-inline: 40px;
+}
+.mailCS_btn a::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/mail.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* copy modal */
+.copyModal.active {
+  bottom: 25px;
+}
+.copyModal {
+  position: fixed;
+  bottom: calc((1rem + 18px * 2) * -1);/* 25px */  
+  z-index: 1;
+  left: 50%;
+  width: 80%;
+  left: calc(50% - 40%);/* 80%/2 */
+  transition: .3s ease-in-out;
+}
+.copyModal p {
+  padding: 13px 16px 16px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 99px;
+  font-size: 13px;
+}
+
+
+
+/* contact */
+.contact_list {
+  border: solid 1px var(--color-line);
+  border-radius: 25px;
+  padding: 0 20px;
+  margin: 25px 0;
+}
+.contact_list_title, .contact_list_copy {
+  line-height: 54px;
+}
+.contact_list_title {
+  border-bottom: solid 1px var(--color-line);
+}
+.contact_list ul {
+  padding: 27px 0;
+  list-style: none;
+  width: fit-content;
+  margin: 0 auto;
+}
+.contact_list li {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: first baseline;
+  gap: 5px;
+}
+
+.contact_list li:last-child {
+  margin-bottom: 0;
+}
+.contact_list li::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: solid 1px var(--color-text);
+  border-radius: 50%;
+  flex-shrink: 0;
+  transform: translateY(-2px);
+}
+.contact_list span {
+  display: inline-block;
+  font-size: 13px;
+}
+.contact_list_copy {
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 1px var(--color-line);
+}
+
+
+/*desctop版*/
+@media (min-width: 800px) {   
+  #topMovie figure video {
+    height: 62vh;
+  }
+  .mailCS_btn {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    margin: 25px 0 0;
+    max-width: 320px;
+  }
+  #Contact .mailCS_btn {
+    margin: 0 auto;
+  }
+}

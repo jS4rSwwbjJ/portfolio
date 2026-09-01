@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* .zen-kaku-gothic-new-light {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.zen-kaku-gothic-new-regular {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zen-kaku-gothic-new-medium {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+} */
+
+/*-----------------main-----------------*/
+/* ------about------ */
+.about_gridContainer {
+  display: grid;
+  /* 116px 画像幅 */
+  grid-template-columns: clamp(116px,23.2vw,140px) auto;
+  grid-template-rows: repeat(4, auto);
+  grid-column-gap: 25px;
+  grid-row-gap: 0;
+  overflow-wrap: break-word; 
+  margin-top: 25px;
+}
+.about_page .about_gridContainer {
+  grid-template-rows: repeat(3, auto);
+}
+.about_gridContainer img {
+  border-radius: 50%;
+}
+.name {
+  align-self: center;
+}
+.name dt {
+  font-weight: 500;
+  font-size: 17px;
+}
+.about_txt {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  margin: 25px 0 15px;
+}
+.about_Etxt {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  
+}
+.about_Etxt p {
+  color: var(--color-line);
+  font-size: 11px;
+}
+
+/* ------Archive------ */
+.archive_list {
+  width: fit-content;
+}
+.archive_list dt {
+  display: flex;
+  align-items: center;
+  font-size: clamp(12px,15vw,13px);
+  margin-top: 35px;
+}
+.archive_list dt:first-child {
+  margin-top: 0;
+}
+.archive_list dd {
+  /*  clamp(15px,1.87vw,20px) */
+  margin-top: 15px;
+}
+
+.archive_list dt::after {
+  content: '';
+  background-color: var(--color-line);
+  height: 1px;
+  flex-grow: 1;
+  margin-left: 5px;
+  transform: translateY(1px);
+}
+
+/*desctop版*/
+@media (min-width: 800px) {   
+  #Works {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .tag_list {
+    display: flex;
+    justify-content: center;
+  }
+  .about_gridContainer {
+    grid-template-columns: clamp(175px,16.6vw,208px) auto;
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 50px;
+    grid-row-gap: 0;
+    overflow-wrap: break-word; 
+    margin-top: 25px;
+  }
+  .about_page .about_gridContainer {
+    grid-template-rows: repeat(3, auto);
+  }
+  .about_gridContainer figure {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+  }
+  .name, .about_txt, .about_Etxt {
+    grid-column: 2 / 3;
+  }
+  .name {
+    grid-row: 1 / 2;
+    margin-top: 15px;
+  }
+  .about_txt {
+    grid-row: 2 / 3;
+    margin: 35px 0 22px;
+  }
+  .about_Etxt {
+    grid-row: 3 / 4;
+  }
+  
+}
+
+/* ホバー、タッチ操作切り替え */
+@media (hover: hover) { /* hoverが使える端末 PC想定 */
+  .page_link div:hover {
+    transform: translateY(16px);
+  }
+}
+@media (hover: none) { /* hoverが使えない端末 スマホ想定 */
+  .page_link div:active {
+    transform: translateY(16px);
+  }
+}

@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/* .zen-kaku-gothic-new-light {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.zen-kaku-gothic-new-regular {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zen-kaku-gothic-new-medium {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+} */
+
+/*-----------------main-----------------*/
+
+/* main works */
+.works_item h3, .WModal_title {
+  font-size: clamp(20px,2.5vw,26px);
+  font-weight: 500;
+  color: var(--color-text);
+  margin: 8px 0;
+}
+/* modal */
+.WModal {
+  position: fixed;
+  background-color: #fff;
+  transform: translateY(100%); 
+  height: 70vh;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  padding: 0px 29px 0;
+  border-top-left-radius: clamp(24px,3vw,45px);
+  border-top-right-radius: clamp(24px,3vw,45px);
+  z-index: 101;
+  transition: ease .3s; 
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+.WModal::-webkit-scrollbar {
+  display: none;            /* Chrome・Edge・Safari */
+}
+.WModal_wrap {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.WModal.active {
+  transform: translateY(0); 
+}
+/* .WModal_title {
+  margin: 40px 0 18px;
+} */
+.WModal_mainMedia iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.WModal_mainMedia video {
+  width: 100%;
+}
+.WModal_tag_items {/* modal tag */
+  margin: 22px 0;
+}
+.WModal_txt {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.WModal_note p,.WModal_note_year {
+  font-size: 12px;
+  margin-bottom: 7px;
+  line-height: 1;
+}
+.WModal_note_year {
+  margin-bottom: 22px;
+}
+.WModal_subImgs img {
+  margin-bottom: clamp(10px,2vw,25px);
+}
+.WModal_subImgs img:last-child {
+  margin-bottom: 38px;
+}
+
+.works_item {
+  margin-bottom: clamp(60px,7.5vw,80px);
+}
+.works_item:last-child {
+  margin-bottom: 40px;
+}
+.works_item img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
+}
+.WModal_title {
+  margin: 0 0 clamp(8px,1vw,20px);
+}
+.works_item img, .WModal_mainImg, .WModal_mainMedia video, .WModal_mainMedia iframe, .WModal_mainMedia img, .WModal_subImgs img {
+  border-radius: 10px;
+}
+
+/* ------------tag------------ */
+/* hedder tag list */
+.tag_list {
+  position: sticky;
+  top: calc(-9px + clamp(48px, 6vw, 60px) + 2*clamp(9px, 1.11vw, 12px));
+  padding: 25px 0 16px;
+  z-index: 96;
+}
+.tag_list input {
+  display: none;
+}
+.tag_list ul {
+  list-style: none;
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.tag_list li {
+  width: fit-content;
+  display: inline;
+}
+.tag_items {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+.tag, button{
+  background-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
+  border-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
+  cursor: pointer;
+}
+.tag_items a, .tag_list label, .tag, .WModal_tag_items p {
+  padding: 3px 15px 5px;
+  font-size: 11px;
+  font-weight: 500;
+  background-color: var(--color-tag);
+  letter-spacing: 0.05em;
+  border-radius: 99px;
+  color: var(--color-text);
+  display: inline-block;
+}
+
+.tag_list label {
+  font-size: 13px;
+  color: var(--color-text);
+  border: solid 1px var(--color-line);
+  background-color: color-mix(in srgb, var(--color-background) 90%, transparent);
+}
+/* Allだけ未選択時 */
+#js-filter-all:not(:checked) + label{
+  background-color: color-mix(in srgb, var(--color-tag_all) 90%, transparent);
+}
+/* チェック後 */
+input[type="checkbox"]:checked + label {
+  background-color:var(--color-line);
+  color: #fff;
+}
+/* 該当なし時 */
+.no_results {
+  padding: 20px 0;
+  display: none;
+  width: 100%;
+  justify-content: center;
+}
+.load_more.is-hidden {
+  display: none;
+}
+/* view more aタグ使わないため */
+.page_link div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: clamp(203px,25.3vw,250px);
+  padding: 0 40px 21px;
+  border: solid var(--color-line) 1px;
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
+  border-top: none;
+  margin-bottom: 40px;
+  transition: .2s ease-in-out;
+}
+.load_more img{
+  transform: translate(0, 1px) rotate(90deg);
+}
+
+/*desctop版*/
+@media (min-width: 800px) {   
+  #Works {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .tag_list {
+    display: flex;
+    justify-content: center;
+  }
+  .works_items {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 60px clamp(40px,4vw,150px);
+    margin-top: 6px;
+    margin-bottom: clamp(60px,7.5vw,80px);
+  }
+  .works_item {
+    width: auto;
+    margin-bottom: 0;
+  }
+  .no_results {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: none;
+  }
+  /* headerが初期高さの場合 */
+  .WModal {
+    transform: translateX(calc(100% + 18px)); 
+    /* + 20pxでheaderとくっつけるか */
+    height: calc(100vh - calc(clamp(48px, 6vw, 60px) + 2*(clamp(9px, 1.11vw, 12px)) + 18px + 20px));
+    left: inherit;
+    width: 68%;
+    margin-right: 18px;
+  }
+  /* headerスクロール後高さの場合 */
+  /* .WModal.scrolled {
+    height: calc(100vh - calc(clamp(48px, 6vw, 60px) + 2*(clamp(9px, 1.11vw, 12px)) + 18px));
+  } */
+  #Works .header_close {
+    top: calc(clamp(48px, 6vw, 60px) + 2*(clamp(9px, 1.11vw, 12px)) + 30px);
+    margin-right: 0;
+  }
+  .WModal_tag_items {/* modal tag */
+    margin: 8px 0 25px;
+  }
+  /* 本文に画像があるなら.flex_wrapperをflex、ないならflexしない */
+  .WModal .flex_wrapper:has(.WModal_subImgs img) {
+    display: flex;
+    gap: clamp(30px,2.7vw,60px);
+  }
+  .flex_wrapper div {
+    flex: 1;/* 等分 */    
+  }
+  .Wlink_group {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+  }
+  .page_link div {
+    margin-bottom: 0;
+  }
+}
+
+/* ホバー、タッチ操作切り替え */
+@media (hover: hover) { /* hoverが使える端末 PC想定 */
+  .page_link div:hover {
+    transform: translateY(16px);
+  }
+}
+@media (hover: none) { /* hoverが使えない端末 スマホ想定 */
+  .page_link div:active {
+    transform: translateY(16px);
+  }
+}
