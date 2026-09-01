@@ -1,0 +1,46 @@
+ [
+  {
+    "id": 1,
+    "title": "1. 作品名１",
+    "mediaType": "image",
+    "mediaSrc": "images/smn_16_9.jpg",
+    "Wtag": ["Animation", "Clientwork"],
+    "Wtxt": "紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。",
+    "Wnote": ["client : clientname", "scope : 担当ヶ所。原画など"],
+    "WnoteY": "2026",
+    "WsubImg": []
+  },
+  {
+    "id": 2,
+    "title": "2. 作品名２",
+    "mediaType": "youtube",
+    "mediaSrc": "n34Xw0xsjsc?si=xCyb4UYHLhMLBl56",
+    "Wtag": ["Illustration", "Personal", "Web"],
+    "Wtxt": "紹介文が入ります2。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。",
+    "Wnote": [],
+    "WnoteY": "2026",
+    "WsubImg": ["images/smn_1_1.jpg", "images/smn_16_9.jpg","images/smn_16_9.jpg"]
+  },
+  {
+    "id": 3,
+    "title": "3. 作品名３",
+    "mediaType": "video",
+    "mediaSrc": "images/mov_top.mp4",
+    "Wtag": ["Illustration", "Personal", "Web"],
+    "Wtxt": "紹介文が入ります3。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。",
+    "Wnote": [],
+    "WnoteY": "2026",
+    "WsubImg": ["images/smn_1_1.jpg", "images/smn_16_9.jpg","images/smn_16_9.jpg"]  
+  },
+  {
+    "id": 4,
+    "title": "3. 作品名4",
+    "mediaType": "image",
+    "mediaSrc": "images/smn_16_9.jpg",
+    "Wtag": ["Illustration", "Personal", "Web"],
+    "Wtxt": "紹介文が入ります4。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。",
+    "Wnote": ["client : clientname"],
+    "WnoteY": "2026",
+    "WsubImg": ["images/smn_1_1.jpg", "images/smn_16_9.jpg","images/smn_16_9.jpg"]    
+  }
+]
