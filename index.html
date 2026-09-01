@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--ファビコン-->
+        <link rel="icon" type="image/png" href="images/faviconV2.png">
+
+        <!--Googleフォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+        <!--CSS-->
+        <link rel="stylesheet" href="css/style_all.css">
+        <link rel="stylesheet" href="css/style_top_main.css">
+        <link rel="stylesheet" href="css/style_works.css">
+        <link rel="stylesheet" href="css/style_about.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+        <header class="header">
+            <nav class="header_nav_sp sp_only" id="js-nav">
+                <button class="header_close sp_only" id="js-hamburgerC">
+                    <div class="close_line"></div>
+                </button>
+                <a href="index_top.html" class="main_logo sp_only">
+                    <figure>
+                        <img src="images/logo.png" alt="ロゴ">
+                    </figure>
+                    <p>/text</p>
+                </a>
+                
+                <div class="nav_txtGroup">
+                    <ul class="nav_list">
+                        <li><a href="#">Top</a></li>
+                        <li><a href="index_works.html">Works</a></li>
+                        <li><a href="index_about.html">About</a></li>
+                        <li><a href="index_about.html#Archive">Archive</a></li>
+                        <li><a href="">
+                            <img src="images/ka.gif" alt="">
+                        </a></li>
+                    </ul>
+                    <ul class="nav_sns">
+                        <li><a href="">X(Twitter)</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">YouTube</a></li>
+                    </ul>
+                    <small class="sp_only">&copy; 2026 joon</small>
+                </div>
+                
+            </nav>
+            
+            <div class="bg_wrap">
+            <div class="border_wrap">
+            <div class="border_container">
+                <h1 class="logo">
+                    <a href="#" class="main_logo">
+                        <figure>
+                            <img src="images/logo.png" alt="ロゴ">
+                        </figure>
+                        <p>/joon</p>
+                    </a>
+                </h1>
+                <p class="top_jobname">animation/illustration</p>
+                <nav class="header_nav">
+                    <ul class="nav_list">
+                        <li><a href="#">
+                            <div class="pc_nav_gif">
+                                <img src="images/ka.gif" alt="">
+                                <img src="images/ka_hover.gif" alt="">
+                            </div>
+                        </a></li>                        
+                        <li><a href="index_works.html">Works</a></li>
+                        <li><a href="index_about.html">About</a></li>
+                        <li><a href="index_about.html#Archive">Archive</a></li>
+                    </ul>                    
+                </nav>
+                
+                <a href="index_top.html#Contact" class="contact_btn">Contact</a>
+                <button class="header_hamburger" id="js-hamburger">
+                    <div class="header_hamb_line"></div>
+                </button>
+                <div class="nav_cover sp_only" id="js-cover"></div>
+                
+            </div>
+            </div>
+            </div>
+        </header>   
+
+        <main>
+            <div id="js-loading">
+                <figure>
+                    <img src="images/logo.png" alt="ロゴ">
+                </figure>
+            </div>
+            <section id="topMovie">
+                <figure>
+                    <video muted loop playsinline autoplay preload="auto" poster="images/mov_top_cover.png">
+                        <source src="images/mov_top.mp4" type="video/mp4"> 
+                    </video>
+                </figure>
+
+                <div class="movie-dialog">
+                    <button class="header_close" id="js-play_movC">
+                        <div class="close_line"></div>
+                    </button>
+                    
+                    <div class="movie-container">
+                        <div id="targetPlayer" class="movie-iframe-container"></div>
+                    </div>
+                </div>
+                <div class="movie-dialog-background"></div>
+
+                <div id="movie-trigger" class="play_mov">
+                    <p>Play Movie</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 23.59 23.59">
+                        <circle class="txtC_line" cx="11.79" cy="11.79" r="11.54"/>
+                        <path class="txtC_fill" d="M10.44,6.79l5.42,4.31c.44.35.44,1.03,0,1.38l-5.42,4.31c-.58.46-1.43.05-1.43-.69V7.48c0-.74.85-1.15,1.43-.69Z"/>
+                    </svg>
+                </div>
+            </section>
+            
+            <section id="Works">
+                <div class="main-wrapper">
+                    <div class="h2_wrapper">
+                        <h2>Main Works</h2>
+                        <div class="page_link sp_only">
+                            <a href="">
+                                <p>View All</p>
+                                <figure>
+                                    <img src="images/arrow.svg" alt="矢印">
+                                </figure>
+                            </a>
+                        </div>                       
+                    </div>
+                    
+                    <div class="WModal">
+                        <div class="WCbutton_wrapper">
+                            <button class="header_close" id="js-WmodalC">
+                                <div class="close_line"></div>
+                            </button>
+                        </div>
+                        <div class="WModal_wrap">
+                            <h3 class="WModal_title">作品名</h3>
+                            <div class="WModal_mainMedia"></div>
+                            <div class="WModal_tag_items tag_items"></div>
+                            <div class="flex_wrapper">
+                                <div>
+                                    <p class="WModal_txt">説明文</p>
+                                    <div class="WModal_note">clientなど</div>
+                                <p class="WModal_note_year">20xx</p>
+                                </div>
+                                <div>
+                                    <div class="WModal_subImgs"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="WModal_cover"></div> -->
+
+                    <div class="works_items">
+                        <article class="works_item">
+                            <div class="WModal_trigger" data-key="1">
+                                <figure>
+                                    <img src="images/smn_16_9.jpg" alt="サムネイル画像">
+                                </figure>
+                                <h3>作品名１</h3>
+                            </div>
+                            <div class="tag_items">
+                                <a href="index_works.html?tag=ClientWork">Client Work</a>
+                                <a href="index_works.html?tag=Animation">Animation</a>
+                            </div>        
+                        </article>
+                        <article class="works_item">
+                            <div class="WModal_trigger" data-key="2">
+                                <figure>
+                                    <img src="images/smn_16_9.jpg" alt="サムネイル画像">
+                                </figure>
+                                <h3>作品名2</h3>
+                            </div>
+                            <div class="tag_items">
+                                <a href="index_works.html?tag=ClientWork">Client Work</a>
+                                <a href="index_works.html?tag=Animation">Animation</a>
+                            </div>         
+                        </article>
+                        <article class="works_item">
+                            <div class="WModal_trigger" data-key="3">
+                                <figure>
+                                    <img src="images/smn_1_1.jpg" alt="サムネイル画像">
+                                </figure>
+                                <h3>作品名3</h3>
+                            </div>
+                            <div class="tag_items">
+                                <a href="index_works.html?tag=ClientWork">Client Work</a>
+                                <a href="index_works.html?tag=Animation">Animation</a>
+                            </div>         
+                        </article>
+                        <article class="works_item">
+                            <div class="WModal_trigger" data-key="4">
+                                <figure>
+                                    <img src="images/smn_16_9.jpg" alt="サムネイル画像">
+                                </figure>
+                                <h3>作品名４</h3>
+                            </div>
+                            <div class="tag_items">
+                                <a href="index_works.html?tag=ClientWork">Client Work</a>
+                                <a href="index_works.html?tag=Animation">Animation</a>
+                            </div>        
+                        </article>
+                    </div>
+                    <div class="page_link sp_only">
+                        <a href="">
+                            <p>View All</p>
+                            <figure>
+                                <img src="images/arrow.svg" alt="矢印">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+            <section id="About">
+                <div class="main-wrapper main-wrapper-mid">
+                    <div class="h2_wrapper">
+                        <h2>About</h2>
+                        <div class="page_link sp_only">
+                            <a href="">
+                                <p>View More</p>
+                                <figure>
+                                    <img src="images/arrow.svg" alt="矢印">
+                                </figure>
+                            </a>
+                        </div>                       
+                    </div>
+                    
+                    <div class="about_gridContainer">
+                        <figure>
+                            <img src="images/00_template/profile.webp" alt="プロフィール画像">
+                        </figure>
+                        <dl class="name">
+                            <dt>常温</dt>
+                            <dd>animation, illustration</dd>
+                        </dl>
+                        <div class="about_txt">
+                            <p>日常のささやかな“ときめき”を切り取った、空気感のある作品作りを目指している。</p>
+                            <p>動くイラストのような、透明感のあるアニメーションの画作りが得意。</p>
+                            <p>風がよく吹いている。</p>
+                        </div>
+                        <div class="about_Etxt">
+                            <p>I create atmospheric works that capture the quiet moments of everyday wonder.</p>
+                            <p>My specialty is crafting luminous, illustration-like animation with a sense of clarity and delicacy.</p>
+                            <p>The wind is often present in my work.</p>
+                        </div>
+                        
+                        <div class="mailCS_btn">
+                            <button type="button" class="copy_btn">
+                                <figure>
+                                    <img src="images/copy.svg">
+                                </figure>
+                            </button>
+                            <a href="mailto:info@example.com">tokotokopent@gmail.com</a>
+                        </div>                    
+                    </div>
+                    <div class="page_link sp_only">
+                        <a href="">
+                            <p>View More</p>
+                            <figure>
+                                <img src="images/arrow.svg" alt="矢印">
+                            </figure>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+            <section id="Contact">
+                <div class="main-wrapper main-wrapper-mid">
+                    <div class="h2_wrapper">
+                        <h2>Contact</h2>                     
+                    </div>
+                    <p>お仕事についてのご依頼は、メールにてお願いいたします。</p>
+                    <p>下記の「メールでお伝えいただきたい内容」をコピーし、メールに添付してそれぞれ記載したものをお送りください。</p>
+                    <p>お問い合わせ内容を確認後、折り返しご連絡させていただきます。</p>
+                    <div class="contact_list">
+                        <p class="contact_list_title align-center">
+                            メールでお伝えいただきたい内容
+                        </p>
+                        <ul>
+                            <li><div>制作内容<span>（媒体や使用期間など）</span></div></li>
+                            <li>使用目的</li>
+                            <li>仕様、納品形態</li>
+                            <li>納期までのスケジュール</li>
+                            <li><div>ご予算<span>（ご予算に合った最適な内容をこちらからご提案もできるため、ぜひご連絡ください）</span></div></li>
+                            <li><div>ご連絡先<span>（会社名、住所、ご担当者のお名前）</span></div></li>
+                        </ul>
+                        <div class="contact_list_copy">
+                            <figure>
+                                <img src="images/copy.svg">
+                            </figure>
+                            <p>上記の内容をコピー</p>
+                        </div>
+                    </div>
+                    <div class="mailCS_btn">
+                        <button type="button" class="copy_btn">
+                            <figure>
+                                <img src="images/copy.svg">
+                            </figure>
+                        </button>
+                        <a href="mailto:info@example.com">tokotokopent@gmail.com</a>
+                    </div> 
+                </div>
+            </section>
+            <div id="js-copy-txt" class="copyModal"></div>
+        </main>
+        <footer class="footer">
+            <div class="footer_txt">
+                <p>メインはこちら</p>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 96.05 27.56">
+                <path class="footer_hukidashi" d="M.84.25C-3.72,7.2,19.63,13.12,22.71,18.14s-5.24,11.85-5.7,8.09,13.08-5.91,37.09-5.57,42.95-3.44,41.64-13.91"/>
+                </svg>
+            </div>
+            <ul class="footer_sns">
+                <li><a href="">X(Twitter)</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">YouTube</a></li>
+            </ul>
+            <small>&copy; 2026 joon</small>
+        </footer>
+        </div>
+        <!--スクリプト-->
+        <script src="javascript/script_all.js"></script>
+        <script src="javascript/script_top.js"></script>
+        <script src="javascript/script_Wmodal.js"></script>
+    </body>
+</html>
