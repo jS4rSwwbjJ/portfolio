@@ -1,46 +1,394 @@
- [
-  {
-    "id": 1,
-    "title": "1. 作品名１",
-    "mediaType": "image",
-    "mediaSrc": "images/smn_16_9.jpg",
-    "Wtag": ["Animation", "Clientwork"],
-    "Wtxt": "紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。",
-    "Wnote": ["client : clientname", "scope : 担当ヶ所。原画など"],
+[{
+    "id": 26,
+    "title": "プロセカ「ペンタトニック」アニメーションMV　演出",
+    "mediaType": "youtube",
+    "mediaSrc": "H4d7PeX6NoM",
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "プロセカの「ペンタトニック」アニメーションMVにて、一部の演出を担当しました。",
+    "Wnote": ["client : Colorful Palette", "scope : 一部演出"],
     "WnoteY": "2026",
     "WsubImg": []
   },
   {
-    "id": 2,
-    "title": "2. 作品名２",
-    "mediaType": "youtube",
-    "mediaSrc": "n34Xw0xsjsc?si=xCyb4UYHLhMLBl56",
-    "Wtag": ["Illustration", "Personal", "Web"],
-    "Wtxt": "紹介文が入ります2。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。",
-    "Wnote": [],
+    "id": 25,
+    "title": "ふつつかな悪女ではございますが ～雛宮蝶鼠とりかえ伝～ 6話/10話　LO原画",
+    "mediaType": [],
+    "mediaSrc": [],
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "「ふつつかな悪女ではございますが ～雛宮蝶鼠とりかえ伝～」6話、10話にてLO、原画を一部担当しました。",
+    "Wnote": ["client : 動画工房", "scope : LO/原画"],
     "WnoteY": "2026",
-    "WsubImg": ["images/smn_1_1.jpg", "images/smn_16_9.jpg","images/smn_16_9.jpg"]
+    "WsubImg": []
   },
   {
-    "id": 3,
-    "title": "3. 作品名３",
-    "mediaType": "video",
-    "mediaSrc": "images/mov_top.mp4",
-    "Wtag": ["Illustration", "Personal", "Web"],
-    "Wtxt": "紹介文が入ります3。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。",
-    "Wnote": [],
+    "id": 24,
+    "title": "逢宙セイ 配信EDアニメーション",
+    "mediaType": "youtube",
+    "mediaSrc": "pV4q8LEk-YI",
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "逢宙セイさんの配信EDアニメーションを制作しました。<br> モチーフの宇宙とご本人にちなんだ小物を散りばめ、そしてカニがいる不思議な空間を目指しました。",
+    "Wnote": "client : シェアドリプロダクション",
     "WnoteY": "2026",
-    "WsubImg": ["images/smn_1_1.jpg", "images/smn_16_9.jpg","images/smn_16_9.jpg"]  
+    "WsubImg": []
+  },
+  {
+    "id": 23,
+    "title": "STELLIVE 「STAR TRAIL」MV",
+    "mediaType": "youtube",
+    "mediaSrc": "v094-E3Pmtk",
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "STELLIVE様の  「STAR TRAIL」MVにて、一部のLO、原画を担当しました。",
+    "Wnote": ["client : WIT STUDIO", "scope : LO/原画"],
+    "WnoteY": "2026",
+    "WsubImg": [
+      "images/02_works/02_works_details/023/details01.webp",
+      "images/02_works/02_works_details/023/details02.webp"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "社築 「DISK-TOP-FANTASY!」MV",
+    "mediaType": "youtube",
+    "mediaSrc": "zkZTNp6PdWo",
+    "Wtag": [
+      "Illustration",
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "社築様の 「DISK-TOP-FANTASY!」アニメーションMVにて、一部のイラスト、原画、動画、仕上げを担当しました。",
+    "Wnote": ["client : ANYCOLOR", "scope : イラスト/原画/動画/仕上げ"],
+    "WnoteY": "2025",
+    "WsubImg": [
+      "images/02_works/02_works_details/022/details01.webp"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "ザムザ　ファンアート",
+    "mediaType": "image",
+    "mediaSrc": "images/02_works/02_works_details/021/main.webp",
+    "Wtag": [
+      "Illustration",
+      "PersonalWork"
+    ],
+    "Wtxt": "MVも曲も衣装も好き…！の気持ちです。",
+    "Wnote": "Title : プロセカ",
+    "WnoteY": "2025",
+    "WsubImg": []
+  },
+  {
+    "id": 20,
+    "title": "紫雲寺家の子供たち 6話/9話",
+    "mediaType": [],
+    "mediaSrc": [],
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "「紫雲寺家の子供たち」 6話、9話にて第2原画を一部担当しました。",
+    "Wnote": ["client : 動画工房", "scope : 第2原画"],
+    "WnoteY": "2025",
+    "WsubImg": []
+  },
+  {
+    "id": 19,
+    "title": "しぐれうい 「Pris-Magic!」MV",
+    "mediaType": "youtube",
+    "mediaSrc": "uCuSX3Y004E",
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "しぐれうい様の 「Pris-Magic!」MVにて、一部の原画、動画を担当しました。",
+    "Wnote": ["client : 山下RIRI", "scope : 原画/動画"],
+    "WnoteY": "2024",
+    "WsubImg": [
+      "images/02_works/02_works_details/019/details01.webp"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "突っ走れ！！！！！ファンアート",
+    "mediaType": "image",
+    "mediaSrc": "images/02_works/02_works_details/018/main.webp",
+    "Wtag": [
+      "Illustration",
+      "PersonalWork"
+    ],
+    "Wtxt": "神域リーグの応援しているチームのファンアート。この頃は1位を突っ走っていましてね…",
+    "Wnote": "Title : 松本焼肉夜露司苦レス/神域リーグ",
+    "WnoteY": "2024",
+    "WsubImg": []
+  },
+  {
+    "id": 17,
+    "title": "2024あけおめ動画",
+    "mediaType": "video",
+    "mediaSrc": "images/02_works/02_works_details/017/main.mp4",
+    "Wtag": [
+      "Illustration",
+      "Animation",
+      "PersonalWork"
+    ],
+    "Wtxt": "モーショングラフィックを触ってみたくて制作しました。デジタル年賀状",
+    "Wnote": [],
+    "WnoteY": "2024",
+    "WsubImg": []
+  },
+  {
+    "id": 16,
+    "title": "小森めと　ファンアート",
+    "mediaType": "youtube",
+    "mediaSrc": "images/02_works/02_works_details/016/main.webp",
+    "Wtag": [
+      "Illustration",
+      "PersonalWork"
+    ],
+    "Wtxt": "お誕生日おめでとうございます！",
+    "Wnote": "Title : 小森めと",
+    "WnoteY": "2023",
+    "WsubImg": []
+  },
+  {
+    "id": 15,
+    "title": "プロセカ「NEO」アニメーションMV",
+    "mediaType": "youtube",
+    "mediaSrc": "zw0JHV7nrUg",
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "プロセカの 「NEO」アニメーションMVにて、MV用キャラクターデザインと、一部の原画、動画、仕上げを担当しました。",
+    "Wnote": ["client : Colorful Palette", "scope : MV用キャラクターデザイン/一部作監/原画/動画"],
+    "WnoteY": "2023",
+    "WsubImg": []
+  },
+  {
+    "id": 14,
+    "title": "matomoのmatome vol.1",
+    "mediaType": "image",
+    "mediaSrc": "images/02_works/02_works_details/014/main.webp",
+    "Wtag": [
+      "Clientwork",
+      "Design"
+    ],
+    "Wtxt": "所属するstudio matomoの制作中の作品資料が掲載される冊子「matomoのmatome vol.1」の編集、デザイン周り、及び参加イベントのお品書きなどのデザイン周りを担当しました。",
+    "Wnote": "client : studio matomo",
+    "WnoteY": "2023",
+    "WsubImg": [
+      "images/02_works/02_works_details/014/details01.webp"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "白銀茉茉 新衣装用配信OPアニメーション",
+    "mediaType": "youtube",
+    "mediaSrc": "A0zuDotMi74",
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "台湾のVTuber、白銀茉茉さんの新衣装用配信OPアニメーションを制作しました。<br>目が覚めるような青色の素敵なドレスと、ご本人らしいかわいい仕草のコントラストを目指しました。<br>動画はメイキングです。",
+    "Wnote": "client : 白銀茉茉",
+    "WnoteY": "2023",
+    "WsubImg": []
+  },
+  
+  {
+    "id": 12,
+    "title": "YOASOBI 「海のまにまに」MV",
+    "mediaType": "youtube",
+    "mediaSrc": "7G0ovtPqHnI",
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "YOASOBI様の「海のまにまに」-MVにて、一部のLO、原画を担当しました。",
+    "Wnote": ["client : KASSEN", "scope : LO/原画"],
+    "WnoteY": "2023",
+    "WsubImg": [
+      "images/02_works/02_works_details/012/details01.webp",
+      "images/02_works/02_works_details/011/details02.webp",
+      "images/02_works/02_works_details/011/details03.webp"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Eve 「ぼくらの」MV",
+    "mediaType": "youtube",
+    "mediaSrc": "exOi_zsOHwM",
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "Eve様の 「ぼくらの」MVにて、一部の原画、動画を担当しました。",
+    "Wnote": ["client : Folium", "scope : 原画/動画"],
+    "WnoteY": "2023",
+    "WsubImg": [
+      "images/02_works/02_works_details/011/details01.webp"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "小森めと 配信OPアニメーション",
+    "mediaType": "youtube",
+    "mediaSrc": "oaQpc12uzqY",
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "小森めとさんの配信OPアニメーションを制作しました。<br>起きてから寝るまでの1日の流れを描き、ご本人らしい生活が見える動きや画面作りを目指しました。<br>動画はメイキングです。",
+    "Wnote": "client : 774inc.",
+    "WnoteY": "2022",
+    "WsubImg": [
+      "images/02_works/02_works_details/010/details01.webp",
+      "images/02_works/02_works_details/010/details02.webp"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "まふまふ 「青春切符」MV",
+    "mediaType": "youtube",
+    "mediaSrc": "R1oGwmHYnUQ",
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "まふまふ様の 「青春切符」MVにて、一部の原画、動画、仕上げを担当しました。",
+    "Wnote": ["client : A‑Sketch", "scope : 原画/動画/仕上げ"],
+    "WnoteY": "2022",
+    "WsubImg": []
+  },
+  {
+    "id": 8,
+    "title": "転生賢者の異世界ライフ 9話",
+    "mediaType": [],
+    "mediaSrc": [],
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "「転生賢者の異世界ライフ」9話にてLO、原画を一部担当しました。",
+    "Wnote": ["client : REVOROOT", "scope : LO/原画"],
+    "WnoteY": "2022",
+    "WsubImg": []
+  },
+  {
+    "id": 7,
+    "title": "白銀茉茉 配信OPアニメーション、アラートGIF",
+    "mediaType": "youtube",
+    "mediaSrc": "gQBh1IJGwzA",
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "台湾のVTuber、白銀茉茉さんの配信OPアニメーションとアラートGIFを制作しました。<br>主に夜に活動されるとのことで、夜空を背景に流れ星に心を踊らせる姿がかわいいアニメーションを目指しました。<br>動画はメイキングです。",
+    "Wnote": "client : 白銀茉茉",
+    "WnoteY": "2022",
+    "WsubImg": []
+  },
+  {
+    "id": 6,
+    "title": "白銀茉茉ファンアート",
+    "mediaType": "image",
+    "mediaSrc": "images/02_works/02_works_details/006/main.webp",
+    "Wtag": [
+      "Illustration",
+      "PersonalWork"
+    ],
+    "Wtxt": "素敵な白髪ですね〜",
+    "Wnote": [],
+    "WnoteY": "2022",
+    "WsubImg": []
+  },
+  {
+    "id": 5,
+    "title": "待ち合わせまで、あと...",
+    "mediaType": "youtube",
+    "mediaSrc": "Nylb8bpkx-c",
+    "Wtag": [
+      "Animation",
+      "PersonalWork"
+    ],
+    "Wtxt": "アレのアレのアレです。<br>制作を通して企画や原画の描き方など、本当に勉強になりました。<br>むとこーさんと　に音をつけていただきました！",
+    "Wnote": [],
+    "WnoteY": "2022",
+    "WsubImg": []
   },
   {
     "id": 4,
-    "title": "3. 作品名4",
-    "mediaType": "image",
-    "mediaSrc": "images/smn_16_9.jpg",
-    "Wtag": ["Illustration", "Personal", "Web"],
-    "Wtxt": "紹介文が入ります4。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。紹介文が入ります。",
-    "Wnote": ["client : clientname"],
-    "WnoteY": "2026",
-    "WsubImg": ["images/smn_1_1.jpg", "images/smn_16_9.jpg","images/smn_16_9.jpg"]    
+    "title": "ミスターリトルブレイブ 「ネームレスワールド」MV",
+    "mediaType": "youtube",
+    "mediaSrc": "UjEyj9rBuSY",
+    "Wtag": [
+      "Animation",
+      "Clientwork"
+    ],
+    "Wtxt": "ミスターリトルブレイブ様の「ネームレスワールド」のアニメーションMVを制作しました。<br>歌詞に込められた思いを、ストーリーあるアニメーションで表現することを目指しました。",
+    "Wnote": "client : ミスターリトルブレイブ",
+    "WnoteY": "2021",
+    "WsubImg": [
+      "images/02_works/02_works_details/004/details01.webp",
+      "images/02_works/02_works_details/004/details02.webp",
+      "images/02_works/02_works_details/004/details03.webp"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "生徒会長の秘密",
+    "mediaType": "youtube",
+    "mediaSrc": "trCSr-qjujw",
+    "Wtag": [
+      "Animation",
+      "PersonalWork"
+    ],
+    "Wtxt": "第2回作画王グランプリに参加した際に制作した作品。グランプリを受賞。<br>\n・最低限使用する色の指定<br>\n・6秒以内<br>\n・制作期間は5日<br>\n・個人での制作<br>\n　の条件の中で制作しました。<br>\n一生分の「好き」の感想をこの作品で受け取ってしまった気がしてなりません。",
+    "Wnote": [],
+    "WnoteY": "2021",
+    "WsubImg": []
+  },
+  {
+    "id": 2,
+    "title": "泣いてないし",
+    "mediaType": "youtube",
+    "mediaSrc": "L_Uxc3YcA9c",
+    "Wtag": [
+      "Animation",
+      "PersonalWork"
+    ],
+    "Wtxt": "実質的にアニメーション作家として常温をスタートさせた作品になります。<br>イラストのような質感や色使いのアニメーションを目指しました。ジブリの「心が動くと風が吹く」に強い影響を受けている分かりやすい例かと思います。<br><a href=\"https://kai-you.net/article/78173\">自主制作アニメ部発起人 こむぎこ2000が引き込まれた“ヤバい”作品10選</a>にてご紹介していただきました。",
+    "Wnote": [],
+    "WnoteY": "2020",
+    "WsubImg": []
+  },
+  {
+    "id": 1,
+    "title": "【手描きあんスタ】ジャッジメント アニメティザーPV unofficial fan movie",
+    "mediaType": "youtube",
+    "mediaSrc": "5EWfmE-uVMg",
+    "Wtag": [
+      "Animation",
+      "PersonalWork"
+    ],
+    "Wtxt": "動いているKnightsが！ジャッジメントが！見たい！！！ということで作りました。<br>今思うと、ゲーム内で進級する前の当時のユニット衣装やキャラクター紹介文を残せてよかったなと思いますね。",
+    "Wnote": "Title : あんさんぶるスターズ！",
+    "WnoteY": "2020",
+    "WsubImg": [
+      "images/02_works/02_works_details/001/details01.webp",
+      "images/02_works/02_works_details/001/details02.webp",
+      "images/02_works/02_works_details/001/details03.webp"
+    ]
   }
 ]
