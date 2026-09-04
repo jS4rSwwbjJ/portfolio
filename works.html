@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--ファビコン-->
+        <link rel="icon" type="image/png" href="images/faviconV2.png">
+
+        <!--Googleフォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+        <!--CSS-->
+        <link rel="stylesheet" href="css/style_all.css">
+        <!-- <link rel="stylesheet" href="css/style_top_main.css"> -->
+        <link rel="stylesheet" href="css/style_works.css">
+    </head>
+
+    <body ontouchstart="">
+        <div class="wrapper">
+        <header class="header">
+            <nav class="header_nav_sp sp_only" id="js-nav">
+                <button class="header_close sp_only" id="js-hamburgerC">
+                    <div class="close_line"></div>
+                </button>
+                <a href="index_top.html" class="main_logo sp_only">
+                    <figure>
+                        <img src="images/logo.png" alt="ロゴ">
+                    </figure>
+                    <p>/text</p>
+                </a>
+                
+                <div class="nav_txtGroup">
+                    <ul class="nav_list">
+                        <li><a href="">Top</a></li>
+                        <li><a href="index_works.html">Works</a></li>
+                        <li><a href="index_about.html">About</a></li>
+                        <li><a href="index_about.html#Archive">Archive</a></li>
+                        <li><a href="">
+                            <img src="images/ka.gif" alt="">
+                        </a></li>
+                    </ul>
+                    <ul class="nav_sns">
+                        <li><a href="">X(Twitter)</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">YouTube</a></li>
+                    </ul>
+                    <small class="sp_only">&copy; copy rights.</small>
+                </div>
+                
+            </nav>
+            
+            <div class="bg_wrap">
+            <div class="border_wrap">
+            <div class="border_container">
+                <h1 class="logo">
+                    <a href="" class="main_logo">
+                        <figure>
+                            <img src="images/logo.png" alt="ロゴ">
+                        </figure>
+                        <p>/text</p>
+                    </a>
+                </h1>
+                <p class="top_jobname">animation/illustration</p>
+                <nav class="header_nav">
+                    <ul class="nav_list">
+                        <li><a href="">
+                            <div class="pc_nav_gif">
+                                <img src="images/ka.gif" alt="">
+                                <img src="images/ka_hover.gif" alt="">
+                            </div>
+                        </a></li>                        
+                        <li><a href="index_works.html">Works</a></li>
+                        <li><a href="index_about.html">About</a></li>
+                        <li><a href="index_about.html#Archive">Archive</a></li>
+                    </ul>                    
+                </nav>
+                
+                <a href="index_top.html#Contact" class="contact_btn">Contact</a>
+                <button class="header_hamburger" id="js-hamburger">
+                    <div class="header_hamb_line"></div>
+                </button>
+                <div class="nav_cover sp_only" id="js-cover"></div>
+                
+            </div>
+            </div>
+            </div>
+
+        </header> 
+
+        <main>  
+            <div class="works_page">     
+            <section id="Works">
+
+                <div class="main-wrapper">
+                    <div class="h2_wrapper">
+                        <h2>Works</h2>
+                    </div>
+                    
+                    <div class="WModal">
+                        <div class="WCbutton_wrapper">
+                            <button class="header_close" id="js-WmodalC">
+                                <div class="close_line"></div>
+                            </button>
+                        </div>
+                        <div class="WModal_wrap">
+                            <h3 class="WModal_title">作品名</h3>
+                            <div class="WModal_mainMedia"></div>
+                            <div class="WModal_tag_items tag_items"></div>
+                            <div class="flex_wrapper">
+                                <div>
+                                    <p class="WModal_txt">説明文</p>
+                                    <div class="WModal_note">clientなど</div>
+                                <p class="WModal_note_year">20xx</p>
+                                </div>
+                                <div>
+                                    <div class="WModal_subImgs"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="WModal_cover"></div> -->
+
+                    <div class="tag_list">                        
+                        <ul>
+                            <li><input type="checkbox" value="1" id="js-filter-all" checked>
+                                <label for="js-filter-all">All</label>
+                            </li>
+                            <li><input type="checkbox" value="ClientWork" class="tag"
+                                id="cb_ClientWork">
+                                <label for="cb_ClientWork">Client Work</label>
+                            </li>
+                            <li><input type="checkbox" value="PersonalWork" class="tag" id="cb_PersonalWork">
+                                <label for="cb_PersonalWork">Personal Work</label>
+                            </li>
+                            <li><input type="checkbox" value="FanWorks" class="tag" id="cb_FanWorks">
+                                <label for="cb_FanWorks">Fan Works</label>
+                            </li>
+                            <li><input type="checkbox" value="Animation" class="tag" id="cb_Animation">
+                                <label for="cb_Animation">Animation</label>
+                            </li>
+                            <li><input type="checkbox" value="Illustration" class="tag" id="cb_Illustration">
+                                <label for="cb_Illustration">Illustration</label>
+                            </li>
+                            <li><input type="checkbox" value="Design" class="tag" id="cb_Design">
+                                <label for="cb_Design">Design</label>
+                            </li>
+                            <li><input type="checkbox" value="Web" class="tag" id="cb_Web">
+                                <label for="cb_Web">Web</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="works_items">
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="26">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_026.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>プロセカ「ペンタトニック」アニメーションMV 演出</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="25">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_noimage02.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>ふつつかな悪女ではございますが ～雛宮蝶鼠とりかえ伝～ 6話、10話 LO原画</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="24">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_024.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>逢宙セイ 配信EDアニメーション</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="23">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_023.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>STELLIVE 「STAR TRAIL」MV</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation Illustration">
+                            <div class="WModal_trigger" data-key="22">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_022.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>社築 「DISK-TOP-FANTASY!」MV</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                                <button type="button" class="tag" data-tag="Illustration">Illustration</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="FanWorks Illustration">
+                            <div class="WModal_trigger" data-key="21">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_021.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>ザムザ ファンアート</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="FanWorks">Fan Works</button>
+                                <button type="button" class="tag" data-tag="Illustration">Illustration</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="20">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_noimage03.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>紫雲寺家の子供たち 6話、9話 第２原画</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="19">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_019.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>しぐれうい 「Pris-Magic!」MV</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="FanWorks Illustration">
+                            <div class="WModal_trigger" data-key="18">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_018.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>突っ走れ！！！！！ファンアート</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="FanWorks">Fan Works</button>
+                                <button type="button" class="tag" data-tag="Illustration">Illustration</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="PersonalWork Animation Illustration">
+                            <div class="WModal_trigger" data-key="17">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_017.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>2024あけおめ動画</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="PersonalWork">Personal Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                                <button type="button" class="tag" data-tag="Illustration">Illustration</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="FanWorks Illustration">
+                            <div class="WModal_trigger" data-key="16">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_016.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>小森めと ファンアート</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="FanWorks">Fan Works</button>
+                                <button type="button" class="tag" data-tag="Illustration">Illustration</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="15">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_015.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>プロセカ「NEO」アニメーションMV</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="14">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_014.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>matomoのmatome vol.1</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Design">Design</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="13">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_013.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>白銀茉茉 新衣装用配信OPアニメーション</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="12">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_012.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>YOASOBI 「海のまにまに」MV</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="11">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_011.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>Eve 「ぼくらの」MV</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="10">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_010.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>小森めと 配信OPアニメーション</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="9">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_009.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>まふまふ 「青春切符」MV 画像はファンアート</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>         
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="8">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_noimage01.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>転生賢者の異世界ライフ 9話</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>         
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="7">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_007.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>白銀茉茉 配信OPアニメーション、アラートGIF</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>         
+                        </article>
+                        <article class="works_item" data-tags="FanWorks Illustration">
+                            <div class="WModal_trigger" data-key="6">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_006.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>🤍✨</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="FanWorks">Fan Works</button>
+                                <button type="button" class="tag" data-tag="Illustration">Illustration</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="PersonalWork Animation">
+                            <div class="WModal_trigger" data-key="5">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_005.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>待ち合わせまで、あと...</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="PersonalWork">Personal Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="4">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_004.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>ミスターリトルブレイブ 「ネームレスワールド」MV</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="ClientWork">Client Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>         
+                        </article>
+                        <article class="works_item" data-tags="PersonalWork Animation">
+                            <div class="WModal_trigger" data-key="3">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_003.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>生徒会長の秘密</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="PersonalWork">Personal Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>         
+                        </article>
+                        <article class="works_item" data-tags="PersonalWork Animation">
+                            <div class="WModal_trigger" data-key="2">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_002.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>泣いてないし</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="PersonalWork">Personal Work</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>        
+                        </article>
+                        <article class="works_item" data-tags="FanWorks Animation">
+                            <div class="WModal_trigger" data-key="1">
+                                <figure>
+                                    <img src="images/02_works/01_smn/smn_001.webp" alt="サムネイル画像">
+                                </figure>
+                                <h3>【手描きあんスタ】ジャッジメント アニメティザーPV unofficial fan movie</h3>
+                            </div>
+                            <div class="tag_items">
+                                <button type="button" class="tag" data-tag="FanWorks">Fan Works</button>
+                                <button type="button" class="tag" data-tag="Animation">Animation</button>
+                            </div>        
+                        </article>
+                        
+                        <div id="js-no-results" class="no_results">
+                            <p>該当する作品はありません。<br>
+                            タグを変更してお試しください。</p>
+                        </div>
+                    </div>
+                    <!-- <button id="js-load-more" class="load_more">
+                    Read More
+                    </button> -->
+                    <div class="Wlink_group">
+                        <div class="load_more page_link" id="js-load-more">
+                            <div>
+                                <p>Load more</p>
+                                <figure>
+                                    <img src="images/00_template/arrow.svg" alt="矢印">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="page_link">
+                            <a href="">
+                                <p>Archive</p>
+                                <figure>
+                                    <img src="images/00_template/arrow.svg" alt="矢印">
+                                </figure>
+                            </a>
+                        </div> 
+                    </div>
+
+                </div>
+
+            </section>
+            </div>     
+        </main>
+        <footer class="footer">
+            <div class="footer_txt">
+                <p>メインはこちら</p>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 96.05 27.56">
+                <path class="footer_hukidashi" d="M.84.25C-3.72,7.2,19.63,13.12,22.71,18.14s-5.24,11.85-5.7,8.09,13.08-5.91,37.09-5.57,42.95-3.44,41.64-13.91"/>
+                </svg>
+            </div>
+            <ul class="footer_sns">
+                <li><a href="">X(Twitter)</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">YouTube</a></li>
+            </ul>
+            <small>&copy; copy rights</small>
+        </footer>
+        </div>
+        <!--スクリプト-->
+        <script src="javascript/script_all.js"></script>
+        <script src="javascript/script_Wmodal.js"></script>
+        <script src="javascript/script_worksFilter.js"></script>
+    </body>
+</html>
