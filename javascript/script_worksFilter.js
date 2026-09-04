@@ -11,8 +11,8 @@ const noResults = document.querySelector('#js-no-results');
 const loadMoreBtn = document.querySelector('#js-load-more');
 
 let filteredItems = [];
-let currentCount = 4;
-const STEP = 4;
+let currentCount = 8;
+const STEP = 8;
 
 
 
