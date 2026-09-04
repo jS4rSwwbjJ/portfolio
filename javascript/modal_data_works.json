@@ -36,7 +36,7 @@
       "Clientwork"
     ],
     "Wtxt": "逢宙セイさんの配信EDアニメーションを制作しました。<br> モチーフの宇宙とご本人にちなんだ小物を散りばめ、そしてカニがいる不思議な空間を目指しました。",
-    "Wnote": "client : シェアドリプロダクション",
+    "Wnote": ["client : シェアドリプロダクション"],
     "WnoteY": "2026",
     "WsubImg": []
   },
@@ -84,7 +84,7 @@
       "PersonalWork"
     ],
     "Wtxt": "MVも曲も衣装も好き…！の気持ちです。",
-    "Wnote": "Title : プロセカ",
+    "Wnote": ["Title : プロセカ"],
     "WnoteY": "2025",
     "WsubImg": []
   },
@@ -128,7 +128,7 @@
       "PersonalWork"
     ],
     "Wtxt": "神域リーグの応援しているチームのファンアート。この頃は1位を突っ走っていましてね…",
-    "Wnote": "Title : 松本焼肉夜露司苦レス/神域リーグ",
+    "Wnote": ["Title : 松本焼肉夜露司苦レス/神域リーグ"],
     "WnoteY": "2024",
     "WsubImg": []
   },
@@ -157,7 +157,7 @@
       "PersonalWork"
     ],
     "Wtxt": "お誕生日おめでとうございます！",
-    "Wnote": "Title : 小森めと",
+    "Wnote": ["Title : 小森めと"],
     "WnoteY": "2023",
     "WsubImg": []
   },
@@ -185,7 +185,7 @@
       "Design"
     ],
     "Wtxt": "所属するstudio matomoの制作中の作品資料が掲載される冊子「matomoのmatome vol.1」の編集、デザイン周り、及び参加イベントのお品書きなどのデザイン周りを担当しました。",
-    "Wnote": "client : studio matomo",
+    "Wnote": ["client : studio matomo"],
     "WnoteY": "2023",
     "WsubImg": [
       "images/02_works/02_works_details/014/details01.webp"
@@ -201,7 +201,7 @@
       "Clientwork"
     ],
     "Wtxt": "台湾のVTuber、白銀茉茉さんの新衣装用配信OPアニメーションを制作しました。<br>目が覚めるような青色の素敵なドレスと、ご本人らしいかわいい仕草のコントラストを目指しました。<br>動画はメイキングです。",
-    "Wnote": "client : 白銀茉茉",
+    "Wnote": ["client : 白銀茉茉"],
     "WnoteY": "2023",
     "WsubImg": []
   },
@@ -250,7 +250,7 @@
       "Clientwork"
     ],
     "Wtxt": "小森めとさんの配信OPアニメーションを制作しました。<br>起きてから寝るまでの1日の流れを描き、ご本人らしい生活が見える動きや画面作りを目指しました。<br>動画はメイキングです。",
-    "Wnote": "client : 774inc.",
+    "Wnote": ["client : 774inc."],
     "WnoteY": "2022",
     "WsubImg": [
       "images/02_works/02_works_details/010/details01.webp",
@@ -295,7 +295,7 @@
       "Clientwork"
     ],
     "Wtxt": "台湾のVTuber、白銀茉茉さんの配信OPアニメーションとアラートGIFを制作しました。<br>主に夜に活動されるとのことで、夜空を背景に流れ星に心を踊らせる姿がかわいいアニメーションを目指しました。<br>動画はメイキングです。",
-    "Wnote": "client : 白銀茉茉",
+    "Wnote": ["client : 白銀茉茉"],
     "WnoteY": "2022",
     "WsubImg": []
   },
@@ -337,7 +337,7 @@
       "Clientwork"
     ],
     "Wtxt": "ミスターリトルブレイブ様の「ネームレスワールド」のアニメーションMVを制作しました。<br>歌詞に込められた思いを、ストーリーあるアニメーションで表現することを目指しました。",
-    "Wnote": "client : ミスターリトルブレイブ",
+    "Wnote": ["client : ミスターリトルブレイブ"],
     "WnoteY": "2021",
     "WsubImg": [
       "images/02_works/02_works_details/004/details01.webp",
@@ -383,7 +383,7 @@
       "PersonalWork"
     ],
     "Wtxt": "動いているKnightsが！ジャッジメントが！見たい！！！ということで作りました。<br>今思うと、ゲーム内で進級する前の当時のユニット衣装やキャラクター紹介文を残せてよかったなと思いますね。",
-    "Wnote": "Title : あんさんぶるスターズ！",
+    "Wnote": ["Title : あんさんぶるスターズ！"],
     "WnoteY": "2020",
     "WsubImg": [
       "images/02_works/02_works_details/001/details01.webp",
