@@ -18,7 +18,7 @@ const WmodalClose = document.querySelector('#js-WmodalC');
 // json(外部)データ取得
 // javascript/works_modal_data.json　ローカルだとブラウザのセキュリティ的にエラーになる。live serverでjsonのアドレスを取得↓　htmlもjsonと同じブラウザで開く
 let targetModalArray = [];
-fetch('http://127.0.0.1:5500/javascript/modal_data_works.json')
+fetch('./javascript/modal_data_works.json')
   .then(response => response.json())
   .then(data => {
     targetModalArray = data;
