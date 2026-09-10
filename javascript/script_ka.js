@@ -15,66 +15,64 @@ fetch('./javascript/modal_data_ka.json')
   .then(response => response.json())
   .then(data => {
     images = data;
-    images.forEach(file => {
+    images.forEach((file, index) => {
 
     const img = new Image();
-    img.src = `images/03_ka_images/${file}`;
+
     const canvas = document.createElement("canvas");
     canvas.width = SIZE;
     canvas.height = SIZE;
     const ctx = canvas.getContext("2d");
 
-
+    // JSONの順番で先に配置
     gallery.appendChild(canvas);
-      // 一時的
-      console.log("canvas追加:", file);
 
     img.onload = () => {
-      const fileName = file.replace(/\.[^.]+$/, "");
-      console.log(fileName);
-      
-      // アスペクト比を維持した中央トリミング
-      const scale = Math.max(
-        SIZE / img.width,
-        SIZE / img.height
-      );
+        const fileName = file.replace(/\.[^.]+$/, "");
+        console.log(fileName);
 
-      const drawWidth = img.width * scale;
-      const drawHeight = img.height * scale;
+        // アスペクト比を維持した中央トリミング
+        const scale = Math.max(
+            SIZE / img.width,
+            SIZE / img.height
+        );
 
-      // デフォルトは中央を基準にトリミング
-      let x = (SIZE - drawWidth) / 2;
-      let y = (SIZE - drawHeight) / 2;
-      if (fileName.includes("_TOP")) {
-        y = 0;
-      } else if (fileName.includes("_BOTTOM")) {
-        y = SIZE - drawHeight;
-      }
+        const drawWidth = img.width * scale;
+        const drawHeight = img.height * scale;
 
-      if (fileName.includes("_LEFT")) {
-        x = 0;
-      } else if (fileName.includes("_RIGHT")) {
-        x = SIZE - drawWidth;
-      }
+        let x = (SIZE - drawWidth) / 2;
+        let y = (SIZE - drawHeight) / 2;
 
-      ctx.drawImage(
-        img,
-        x,
-        y,
-        drawWidth,
-        drawHeight
-      );
+        if (fileName.includes("_TOP")) {
+            y = 0;
+        } else if (fileName.includes("_BOTTOM")) {
+            y = SIZE - drawHeight;
+        }
 
-      canvas.addEventListener("click", () => {
-        modalImage.src = img.src;
-        Kmodal.classList.add("active");
-        targetModalBackground.classList.add("active");
-      });
+        if (fileName.includes("_LEFT")) {
+            x = 0;
+        } else if (fileName.includes("_RIGHT")) {
+            x = SIZE - drawWidth;
+        }
 
-      
+        ctx.drawImage(
+            img,
+            x,
+            y,
+            drawWidth,
+            drawHeight
+        );
 
+        canvas.addEventListener("click", () => {
+            modalImage.src = img.src;
+            Kmodal.classList.add("active");
+            targetModalBackground.classList.add("active");
+        });
     };
-  });
+
+    // 画像の読み込み開始
+    img.src = `images/03_ka_images/${file}`;
+});
 
   // [3]. のモーダル背景がクリックされた場合に is-active をはずしてモーダルをとじる
   targetModalBackground.addEventListener('click', (event) => {
