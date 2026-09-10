@@ -24,9 +24,10 @@ fetch('./javascript/modal_data_ka.json')
     canvas.height = SIZE;
     const ctx = canvas.getContext("2d");
 
-      // 一時的
-    console.log(file);
+
     gallery.appendChild(canvas);
+      // 一時的
+      console.log("canvas追加:", file);
 
     img.onload = () => {
       const fileName = file.replace(/\.[^.]+$/, "");
