@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>test</title>
+        <!-- 消す！！！！！！！！ -->
         <meta name="robots" content="noindex">
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--ファビコン-->
@@ -28,7 +30,7 @@
                 <button class="header_close sp_only" id="js-hamburgerC">
                     <div class="close_line"></div>
                 </button>
-                <a href="index_top.html" class="main_logo sp_only">
+                <a href="/" class="main_logo sp_only">
                     <figure>
                         <img src="images/00_template/logo.png" alt="ロゴ">
                     </figure>
@@ -38,17 +40,26 @@
                 <div class="nav_txtGroup">
                     <ul class="nav_list">
                         <li><a href="#">Top</a></li>
-                        <li><a href="works.html">Works</a></li>
-                        <li><a href="index_about.html">About</a></li>
-                        <li><a href="index_about.html#Archive">Archive</a></li>
-                        <li><a href="">
-                            <img src="images/ka.gif" alt="">
-                        </a></li>
+                        <li><a href="/works">Works</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/about#Archive">Archive</a></li>
+                        <li>
+                            <div class="Kvideo_wrapper Kvideo_wrapperSP">
+                                <a href="/e2Bhj4cyZ4">
+                                    <video class="Kvideo-2SP" muted playsinline preload="auto" loop>
+                                    <source src="images/00_template/ka_btn2.webm" type="video/webm">
+                                    </video>
+                                </a>
+                                <video class="Kvideo-1SP" muted playsinline preload="auto">
+                                    <source src="images/00_template/ka_btn1.webm" type="video/webm">
+                                </video>
+                            </div> 
+                        </li>
                     </ul>
                     <ul class="nav_sns">
-                        <li><a href="">X(Twitter)</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">YouTube</a></li>
+                        <li><a href="https://x.com/tokopent">X(Twitter)</a></li>
+                        <li><a href="https://www.instagram.com/joon_tokopent">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/@joon_tokopent">YouTube</a></li>
                     </ul>
                     <small class="sp_only">&copy; 2026 joon</small>
                 </div>
@@ -59,7 +70,7 @@
             <div class="border_wrap">
             <div class="border_container">
                 <h1 class="logo">
-                    <a href="#" class="main_logo">
+                    <a href="/" class="main_logo">
                         <figure>
                             <img src="images/00_template/logo.png" alt="ロゴ">
                         </figure>
@@ -69,19 +80,25 @@
                 <p class="top_jobname">animation/illustration</p>
                 <nav class="header_nav">
                     <ul class="nav_list">
-                        <li><a href="#">
-                            <div class="pc_nav_gif">
-                                <img src="images/ka.gif" alt="">
-                                <img src="images/ka_hover.gif" alt="">
-                            </div>
-                        </a></li>                        
-                        <li><a href="index_works.html">Works</a></li>
-                        <li><a href="index_about.html">About</a></li>
-                        <li><a href="index_about.html#Archive">Archive</a></li>
+                        <li>
+                            <div class="Kvideo_wrapper">
+                                <a href="/e2Bhj4cyZ4">
+                                    <video class="Kvideo-2PC" muted playsinline preload="auto" loop>
+                                    <source src="images/00_template/ka_btn2.webm" type="video/webm">
+                                    </video>
+                                </a>
+                                <video class="Kvideo-1PC" muted playsinline preload="auto">
+                                    <source src="images/00_template/ka_btn1.webm" type="video/webm">
+                                </video>
+                            </div>                      
+                        </li>                        
+                        <li id="js-KbtnPC"><a href="/works">Works</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/about#Archive">Archive</a></li>
                     </ul>                    
                 </nav>
                 
-                <a href="index_top.html#Contact" class="contact_btn">Contact</a>
+                <a href="/#Contact" class="contact_btn">Contact</a>
                 <button class="header_hamburger" id="js-hamburger">
                     <div class="header_hamb_line"></div>
                 </button>
@@ -100,8 +117,10 @@
             </div>
             <section id="topMovie">
                 <figure>
-                    <video muted loop playsinline autoplay preload="auto" poster="images/mov_top_cover.png">
-                        <source src="images/01_top/mov_top.mp4" type="video/mp4"> 
+                    <video muted loop playsinline autoplay preload="auto" poster="images/01_top/mov_top_cover.jpg">
+                        <source src="images/01_top/mov_top_pc.webm" type="video/webm" media="(min-width: 500px)"> 
+                        <source src="images/01_top/mov_top_sp.webm" type="video/webm"> 
+                        ※Your browser does not support the video tag.
                     </video>
                 </figure>
 
@@ -116,13 +135,16 @@
                 </div>
                 <div class="movie-dialog-background"></div>
 
-                <div id="movie-trigger" class="play_mov">
-                    <p>Play Movie</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 23.59 23.59">
-                        <circle class="txtC_line" cx="11.79" cy="11.79" r="11.54"/>
-                        <path class="txtC_fill" d="M10.44,6.79l5.42,4.31c.44.35.44,1.03,0,1.38l-5.42,4.31c-.58.46-1.43.05-1.43-.69V7.48c0-.74.85-1.15,1.43-.69Z"/>
-                    </svg>
+                <div class="play_mov">
+                    <div id="movie-trigger" >
+                        <p>Play Movie</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 23.59 23.59">
+                            <circle class="txtC_line" cx="11.79" cy="11.79" r="11.54"/>
+                            <path class="txtC_fill" d="M10.44,6.79l5.42,4.31c.44.35.44,1.03,0,1.38l-5.42,4.31c-.58.46-1.43.05-1.43-.69V7.48c0-.74.85-1.15,1.43-.69Z"/>
+                        </svg>
+                    </div>
                 </div>
+
             </section>
             
             <section id="Works">
@@ -130,7 +152,7 @@
                     <div class="h2_wrapper">
                         <h2>Main Works</h2>
                         <div class="page_link sp_only">
-                            <a href="">
+                            <a href="/works">
                                 <p>View All</p>
                                 <figure>
                                     <img src="images/00_template/arrow.svg" alt="矢印">
@@ -164,60 +186,65 @@
                     <!-- <div class="WModal_cover"></div> -->
 
                     <div class="works_items">
-                        <article class="works_item">
-                            <div class="WModal_trigger" data-key="1">
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="10">
                                 <figure>
-                                    <img src="images/smn_16_9.jpg" alt="サムネイル画像">
+                                    <img src="images/02_works/01_smn/smn_010.webp" alt="サムネイル画像">
                                 </figure>
-                                <h3>作品名１</h3>
+                                <h3>小森めと 配信OPアニメーション</h3>
                             </div>
                             <div class="tag_items">
-                                <a href="index_works.html?tag=ClientWork">Client Work</a>
-                                <a href="index_works.html?tag=Animation">Animation</a>
+                                <a href="/works?tag=ClientWork">Client Work</a>
+                                <a href="/works?tag=Animation">Animation</a>
                             </div>        
                         </article>
-                        <article class="works_item">
-                            <div class="WModal_trigger" data-key="2">
+
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="15">
                                 <figure>
-                                    <img src="images/smn_16_9.jpg" alt="サムネイル画像">
+                                    <img src="images/02_works/01_smn/smn_015.webp" alt="サムネイル画像">
                                 </figure>
-                                <h3>作品名2</h3>
+                                <h3>プロセカ「NEO」アニメーションMV <span>画像は公開記念ファンアート</span></h3>
                             </div>
                             <div class="tag_items">
-                                <a href="index_works.html?tag=ClientWork">Client Work</a>
-                                <a href="index_works.html?tag=Animation">Animation</a>
-                            </div>         
+                                <a href="/works?tag=ClientWork">Client Work</a>
+                                <a href="/works?tag=Animation">Animation</a>
+                            </div>        
                         </article>
-                        <article class="works_item">
+
+                        <article class="works_item" data-tags="PersonalWork Animation">
                             <div class="WModal_trigger" data-key="3">
                                 <figure>
-                                    <img src="images/smn_1_1.jpg" alt="サムネイル画像">
+                                    <img src="images/02_works/01_smn/smn_003.webp" alt="サムネイル画像">
                                 </figure>
-                                <h3>作品名3</h3>
+                                <h3>生徒会長の秘密</h3>
                             </div>
                             <div class="tag_items">
-                                <a href="index_works.html?tag=ClientWork">Client Work</a>
-                                <a href="index_works.html?tag=Animation">Animation</a>
+                                <a href="/works?tag=PersonalWork">Personal Work</a>
+                                <a href="/works?tag=Animation">Animation</a>
                             </div>         
                         </article>
-                        <article class="works_item">
-                            <div class="WModal_trigger" data-key="4">
+
+                        <article class="works_item" data-tags="ClientWork Animation">
+                            <div class="WModal_trigger" data-key="25">
                                 <figure>
-                                    <img src="images/smn_16_9.jpg" alt="サムネイル画像">
+                                    <img src="images/02_works/01_smn/smn_025.webp" alt="サムネイル画像">
                                 </figure>
-                                <h3>作品名４</h3>
+                                <h3>ふつつかな悪女ではございますが ～雛宮蝶鼠とりかえ伝～ 6話/10話</h3>
                             </div>
                             <div class="tag_items">
-                                <a href="index_works.html?tag=ClientWork">Client Work</a>
-                                <a href="index_works.html?tag=Animation">Animation</a>
+                                <a href="/works?tag=ClientWork">Client Work</a>
+                                <a href="/works?tag=Animation">Animation</a>
                             </div>        
                         </article>
+                        
+                        
                     </div>
                     <div class="page_link sp_only">
-                        <a href="">
+                        <a href="/works">
                             <p>View All</p>
                             <figure>
-                                <img src="images//00_template/arrow.svg" alt="矢印">
+                                <img src="images/00_template/arrow.svg" alt="矢印">
                             </figure>
                         </a>
                     </div>
@@ -229,10 +256,10 @@
                     <div class="h2_wrapper">
                         <h2>About</h2>
                         <div class="page_link sp_only">
-                            <a href="">
+                            <a href="/about">
                                 <p>View More</p>
                                 <figure>
-                                    <img src="images//00_template/arrow.svg" alt="矢印">
+                                    <img src="images/00_template/arrow.svg" alt="矢印">
                                 </figure>
                             </a>
                         </div>                       
@@ -260,17 +287,17 @@
                         <div class="mailCS_btn">
                             <button type="button" class="copy_btn">
                                 <figure>
-                                    <img src="images/01_top/copy.svg">
+                                    <img src="images/01_top/copy.png">
                                 </figure>
                             </button>
                             <a href="mailto:info@example.com">tokotokopent@gmail.com</a>
                         </div>                    
                     </div>
                     <div class="page_link sp_only">
-                        <a href="">
+                        <a href="/about">
                             <p>View More</p>
                             <figure>
-                                <img src="images//00_template/arrow.svg" alt="矢印">
+                                <img src="images/00_template/arrow.svg" alt="矢印">
                             </figure>
                         </a>
                     </div>
@@ -299,7 +326,7 @@
                         </ul>
                         <div class="contact_list_copy">
                             <figure>
-                                <img src="images/01_top/copy.svg">
+                                <img src="images/01_top/copy.png">
                             </figure>
                             <p>上記の内容をコピー</p>
                         </div>
@@ -307,14 +334,14 @@
                     <div class="mailCS_btn">
                         <button type="button" class="copy_btn">
                             <figure>
-                                <img src="images/01_top/copy.svg">
+                                <img src="images/01_top/copy.png">
                             </figure>
                         </button>
                         <a href="mailto:info@example.com">tokotokopent@gmail.com</a>
                     </div> 
                 </div>
             </section>
-            <div id="js-copy-txt" class="copyModal"></div>
+            <div class="copyModal_wrapper"><div id="js-copy-txt" class="copyModal"></div></div>
         </main>
         <footer class="footer">
             <div class="footer_txt">
@@ -324,9 +351,9 @@
                 </svg>
             </div>
             <ul class="footer_sns">
-                <li><a href="">X(Twitter)</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">YouTube</a></li>
+                <li><a href="https://x.com/tokopent">X(Twitter)</a></li>
+                <li><a href="https://www.instagram.com/joon_tokopent">Instagram</a></li>
+                <li><a href="https://www.youtube.com/@joon_tokopent">YouTube</a></li>
             </ul>
             <small>&copy; 2026 joon</small>
         </footer>
@@ -334,6 +361,6 @@
         <!--スクリプト-->
         <script src="javascript/script_all.js"></script>
         <script src="javascript/script_top.js"></script>
-        <script src="javascript/script_Wmodal.js"></script>
+        <!-- <script src="javascript/script_Wmodal.js"></script> -->
     </body>
 </html>
