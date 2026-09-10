@@ -18,7 +18,7 @@ fetch('http://127.0.0.1:5500/javascript/modal_data_ka.json')
     images.forEach(file => {
 
     const img = new Image();
-    img.src = `images/ka_images/${file}`;
+    img.src = `images/03_ka_images/${file}`;
     const canvas = document.createElement("canvas");
     canvas.width = SIZE;
     canvas.height = SIZE;
