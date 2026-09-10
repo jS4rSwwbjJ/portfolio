@@ -11,7 +11,7 @@ const targetModalBackground = document.getElementById("js-cover");
 // ------------------
 
 let images = [];
-fetch('http://127.0.0.1:5500/javascript/modal_data_ka.json')
+fetch('./javascript/modal_data_ka.json')
   .then(response => response.json())
   .then(data => {
     images = data;
