@@ -45,8 +45,11 @@
 .about_txt {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
-  margin: 25px 0 15px;
+  margin: 25px 0 5px;
 }
+.about_txt p {
+    margin-bottom: 10px;
+  }
 .about_Etxt {
   grid-column: 1 / 3;
   grid-row: 3 / 4;
@@ -71,8 +74,8 @@
   margin-top: 0;
 }
 .archive_list dd {
-  /*  clamp(15px,1.87vw,20px) */
   margin-top: 15px;
+  line-height: 1.3;
 }
 
 .archive_list dt::after {
@@ -82,6 +85,16 @@
   flex-grow: 1;
   margin-left: 5px;
   transform: translateY(1px);
+}
+
+.archive_list a {
+  font-size: 10px;
+  background-color: var(--color-tag);
+  /* margin-left: 10px; */
+  padding: 3px 5px;
+  display: inline-block;
+  border-radius: 99px;
+  line-height: 1;
 }
 
 /*desctop版*/
@@ -119,8 +132,9 @@
   }
   .about_txt {
     grid-row: 2 / 3;
-    margin: 35px 0 22px;
+    margin: 35px 0 17px;
   }
+  
   .about_Etxt {
     grid-row: 3 / 4;
   }

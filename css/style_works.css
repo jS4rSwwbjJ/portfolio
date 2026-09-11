@@ -20,13 +20,21 @@
 /*-----------------main-----------------*/
 
 /* main works */
-.works_item h3, .WModal_title {
-  font-size: clamp(20px,2.5vw,26px);
+.works_item h3,.works_item h3 + span, .WModal_title {
+  font-size: clamp(19px,2.5vw,26px);
   font-weight: 500;
   color: var(--color-text);
   margin: 8px 0;
+  line-height: 1.2;
+}
+.works_item h3 span {
+  font-size: 10px;
+   white-space: nowrap;
 }
 /* modal */
+.WModal_trigger {
+  cursor: pointer;
+}
 .WModal {
   position: fixed;
   background-color: #fff;
@@ -68,7 +76,7 @@
   width: 100%;
 }
 .WModal_tag_items {/* modal tag */
-  margin: 22px 0;
+  margin: 5px 0 22px;
 }
 .WModal_txt {
   color: var(--color-text);
@@ -151,10 +159,11 @@
   border-radius: 99px;
   color: var(--color-text);
   display: inline-block;
+  border-width: 0;
 }
 
 .tag_list label {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--color-text);
   border: solid 1px var(--color-line);
   background-color: color-mix(in srgb, var(--color-background) 90%, transparent);
@@ -233,13 +242,11 @@ input[type="checkbox"]:checked + label {
     width: 68%;
     margin-right: 18px;
   }
-  /* headerスクロール後高さの場合 */
-  /* .WModal.scrolled {
-    height: calc(100vh - calc(clamp(48px, 6vw, 60px) + 2*(clamp(9px, 1.11vw, 12px)) + 18px));
-  } */
+  
   #Works .header_close {
     top: calc(clamp(48px, 6vw, 60px) + 2*(clamp(9px, 1.11vw, 12px)) + 30px);
     margin-right: 0;
+    transform: translateY(14px);
   }
   .WModal_tag_items {/* modal tag */
     margin: 8px 0 25px;

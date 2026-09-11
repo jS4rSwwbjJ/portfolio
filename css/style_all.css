@@ -111,6 +111,7 @@ body{
   text-decoration: none;
   font-feature-settings: "palt" 1;
   font-kerning: normal;
+  /* word-break: auto-phrase; */
     
 }
 
@@ -230,27 +231,34 @@ p , dl {
   margin-right: auto;
 }
 .bg_wrap {
-  background-color: var(--color-background);
+  background: linear-gradient(to bottom,
+  rgb(from var(--color-background)  r g b / 1) 0%,
+  rgb(from var(--color-background)  r g b / 0.7) 50%,
+  rgba(0,0,0,0) 100%)
+  /* background-color: rgb(from var(--color-background) r g b / 0.5); */
+  /* backdrop-filter: blur(12px); */
+  /* mask-image:linear-gradient(to bottom, rgb(0 0 0 / 100%) 10%, rgb(0 0 0 / 0%) 100%); */
 }
+
 .border_wrap {
-  border-top: 1px solid var(--color-line);
-  border-bottom: 1px solid var(--color-line);
-  margin: 20px clamp(16px, 2vw,32px);
-  transition: ease-in-out .3s;
+  /* border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line); */
+  margin: 10px clamp(16px, 2vw,32px);
+  /* transition: ease-in-out .3s; */
 }
 /* スクロールしたhedder */
-.border_wrap.scrolled {
+/* .border_wrap.scrolled {
   border-top: 0 solid var(--color-line);
   border-bottom: 0 solid var(--color-line);
   margin: 0 clamp(16px, 2vw,32px);
-}
+} */
 
 .main_logo {
   align-items: flex-end;
   padding: clamp(9px,1.11vw,12px) 0;
 }
 .main_logo img {
-  height: clamp(48px,6vw,60px);
+  height: clamp(42px,6vw,60px);
   padding: clamp(1px,0.3vw,3px) 9px;
 }
 /* .border_wrap.scrolled .main_logo img {
@@ -308,35 +316,33 @@ p , dl {
   margin: 0;
 }
 
-/* gifアニメ */
-.nav_list img, .pc_nav_gif img {
+/* ka nav */
+.Kvideo_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 40px;
+}
+.Kvideo_wrapperSP {
+  justify-content: flex-start;
+}
+.Kvideo-1PC,.Kvideo-2PC,.Kvideo-1SP,.Kvideo-2SP {
+  display: none;
   width: 40px;
 }
-.nav_list:has(li:nth-child(2):hover) .pc_nav_gif {
-  opacity: 1;
+.Kvideo-1SP,.Kvideo-2SP {
+  transform: scaleX(-1) translateX(10px);
 }
-
-.pc_nav_gif {
-  opacity: 0;
-  position: relative;
-  transform: scale(-1, 1);
+.Kvideo-1SP {
+  margin-top: 38px;
+  /* navlist　a についてる余白 */
 }
-.pc_nav_gif img:last-of-type {
-  position: absolute;
-  top: 0;
-  right: 0;
+.Kvideo-2SP {
   opacity: 0;
 }
-.pc_nav_gif:hover img:first-of-type{
-  opacity: 0;
-}
-.pc_nav_gif:hover {
+.Kvideo-2SP:active {
   opacity: 1;
 }
-.pc_nav_gif:hover img:last-of-type{
-  opacity: 1;
-}
-
 
 .nav_sns a {
   font-size: 12px;
@@ -550,6 +556,7 @@ p , dl {
   .border_container >:nth-child(2) {
     margin-right: auto;
     margin-left: 30px;
+    color: #7CB8B8;
   }
   .top_jobname {
     display: inherit;
