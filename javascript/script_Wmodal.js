@@ -89,7 +89,7 @@ fetch('./javascript/modal_data_works.json')
         targetModalDescription.innerHTML = resultModalContent.Wtag
           .map(tag => `<p>${tag}</p>`)
           .join("");
-        targetModalTxt.textContent = resultModalContent.Wtxt;
+        targetModalTxt.innerHTML = resultModalContent.Wtxt;
         targetModalNote.innerHTML = resultModalContent.Wnote
           .map(note => `<p>${note}</p>`)
           .join("");

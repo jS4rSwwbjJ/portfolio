@@ -76,7 +76,7 @@
   },
   {
     "id": 21,
-    "title": "ザムザ　ファンアート",
+    "title": "ザムザ",
     "mediaType": "image",
     "mediaSrc": "images/02_works/02_works_details/021/main.webp",
     "Wtag": [
@@ -84,7 +84,7 @@
       "PersonalWork"
     ],
     "Wtxt": "MVも曲も衣装も好き…！の気持ちです。",
-    "Wnote": ["Title : プロセカ"],
+    "Wnote": ["Title : プロジェクトセカイ カラフルステージ! feat. 初音ミク"],
     "WnoteY": "2025",
     "WsubImg": []
   },
@@ -112,7 +112,7 @@
       "Clientwork"
     ],
     "Wtxt": "しぐれうい様の 「Pris-Magic!」MVにて、一部の原画、動画を担当しました。",
-    "Wnote": ["client : 山下RIRI", "scope : 原画/動画"],
+    "Wnote": ["client : インクストゥエンター", "scope : 原画/動画"],
     "WnoteY": "2024",
     "WsubImg": [
       "images/02_works/02_works_details/019/details01.webp"
@@ -120,7 +120,7 @@
   },
   {
     "id": 18,
-    "title": "突っ走れ！！！！！ファンアート",
+    "title": "突っ走れ！！！！！",
     "mediaType": "image",
     "mediaSrc": "images/02_works/02_works_details/018/main.webp",
     "Wtag": [
@@ -149,8 +149,8 @@
   },
   {
     "id": 16,
-    "title": "小森めと　ファンアート",
-    "mediaType": "youtube",
+    "title": "めでたい！！！",
+    "mediaType": "image",
     "mediaSrc": "images/02_works/02_works_details/016/main.webp",
     "Wtag": [
       "Illustration",
@@ -173,18 +173,20 @@
     "Wtxt": "プロセカの 「NEO」アニメーションMVにて、MV用キャラクターデザインと、一部の原画、動画、仕上げを担当しました。",
     "Wnote": ["client : Colorful Palette", "scope : MV用キャラクターデザイン/一部作監/原画/動画"],
     "WnoteY": "2023",
-    "WsubImg": []
+    "WsubImg": [
+      "images/02_works/02_works_details/015/details01.webp"
+    ]
   },
   {
     "id": 14,
-    "title": "matomoのmatome vol.1",
+    "title": "matomoのmatome",
     "mediaType": "image",
     "mediaSrc": "images/02_works/02_works_details/014/main.webp",
     "Wtag": [
       "Clientwork",
       "Design"
     ],
-    "Wtxt": "所属するstudio matomoの制作中の作品資料が掲載される冊子「matomoのmatome vol.1」の編集、デザイン周り、及び参加イベントのお品書きなどのデザイン周りを担当しました。",
+    "Wtxt": "所属するstudio matomoの制作中の作品資料が掲載される冊子「matomoのmatome」の編集、デザイン周り、及び参加イベントのお品書きなどのデザイン周りを担当しました。",
     "Wnote": ["client : studio matomo"],
     "WnoteY": "2023",
     "WsubImg": [
@@ -219,9 +221,7 @@
     "Wnote": ["client : KASSEN", "scope : LO/原画"],
     "WnoteY": "2023",
     "WsubImg": [
-      "images/02_works/02_works_details/012/details01.webp",
-      "images/02_works/02_works_details/011/details02.webp",
-      "images/02_works/02_works_details/011/details03.webp"
+      "images/02_works/02_works_details/012/details01.webp"
     ]
   },
   {
@@ -237,7 +237,9 @@
     "Wnote": ["client : Folium", "scope : 原画/動画"],
     "WnoteY": "2023",
     "WsubImg": [
-      "images/02_works/02_works_details/011/details01.webp"
+      "images/02_works/02_works_details/011/details01.webp",
+      "images/02_works/02_works_details/011/details02.webp",
+      "images/02_works/02_works_details/011/details03.webp"
     ]
   },
   {
@@ -301,7 +303,7 @@
   },
   {
     "id": 6,
-    "title": "白銀茉茉ファンアート",
+    "title": "🤍✨(白銀茉茉)",
     "mediaType": "image",
     "mediaSrc": "images/02_works/02_works_details/006/main.webp",
     "Wtag": [
@@ -322,7 +324,7 @@
       "Animation",
       "PersonalWork"
     ],
-    "Wtxt": "アレのアレのアレです。<br>制作を通して企画や原画の描き方など、本当に勉強になりました。<br>むとこーさんと　に音をつけていただきました！",
+    "Wtxt": "アレのアレのアレです。<br>制作を通して企画や原画の描き方など、本当に勉強になりました。<br><a href=https://x.com/tokopent/status/1555873536736395264?s=20>むとこーさんと一寺美穂さんに音と声をつけていただきました！</a>",
     "Wnote": [],
     "WnoteY": "2022",
     "WsubImg": []

@@ -35,7 +35,7 @@ function filterItems() {
     });
   }
 
-  currentCount = 4;
+  currentCount = 8;
   render();
 
   // スクロールtopへ

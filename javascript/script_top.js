@@ -1,3 +1,11 @@
+// loading
+let Ltimer;
+window.onload = function () {
+  const spinner = document.getElementById("js-loading");
+  spinner.classList.add("loaded");
+  Ltimer = setTimeout(() => spinner.classList.add("end"), 600);
+};
+
 //------youtubeモーダルウィンドウ------
 // 参考:https://tedate.jp/javascript/to-automatically-play-videos-when-opening-the-modal
 // ローカル環境だとエラーになる。サーバー経由(vscode go live)で確認できる。
@@ -14,7 +22,7 @@ function onYouTubeIframeAPIReady() {
   targetPlayer = new YT.Player('targetPlayer', {
     height: '380px',
     width: '676px',
-    videoId: 'M7lc1UVf-VE', // 再生したい動画のID11桁
+    videoId: 'oybO2WF2Bt4', // 再生したい動画のID11桁
     playerVars: {
     rel: 0,
     origin: window.location.origin
