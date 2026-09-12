@@ -32,7 +32,7 @@
 .about_page .about_gridContainer {
   grid-template-rows: repeat(3, auto);
 }
-.about_gridContainer img {
+.about_prof {
   border-radius: 50%;
 }
 .name {
