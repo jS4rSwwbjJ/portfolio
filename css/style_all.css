@@ -227,11 +227,10 @@ p , dl {
   margin-right: auto;
 }
 .bg_wrap {
-  /* background: linear-gradient(to bottom,
+  background: linear-gradient(to bottom,
   rgb(from var(--color-background)  r g b / 1) 0%,
   rgb(from var(--color-background)  r g b / 0.7) 50%,
-  rgba(0,0,0,0) 100%); 一時的*/ 
-  background-color: pink;
+  rgba(0,0,0,0) 100%); 
 }
 
 .border_wrap {
@@ -311,11 +310,11 @@ p , dl {
 .Kvideo-1PC,.Kvideo-2PC,.Kvideo-1SP,.Kvideo-2SP {
   display: none;
   width: 40px;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
 }
-.Kvideo_wrapper > a {
+/* .Kvideo_wrapper > a {
   mix-blend-mode: multiply;
-}
+} */
 .Kvideo-1SP,.Kvideo-2SP {
   transform: scaleX(-1) translateX(10px);
 }
