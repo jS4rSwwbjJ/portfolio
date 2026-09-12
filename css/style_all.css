@@ -139,7 +139,7 @@ h2 {
   color: var(--color-text);
   letter-spacing: 0.03em;
 }
-.works_page h2, #About h2, #Kakurega h2{
+.works_page h2, .about_page #About h2, #Kakurega h2{
   /* sp 20 0 9  */
   padding: 0;
   margin: clamp(20px,2.5vw,95px) 0 clamp(0.5px,-3.125rem + 6.25vw,15px);
@@ -440,7 +440,7 @@ p , dl {
   font-size: clamp(15px,1.87vw,20px);
   font-weight: 500;
   line-height: 0;
-  padding: clamp(12px,1.5vw,16px) clamp(17px,2.1vw,20px) clamp(17px,2.1vw,20px);
+  padding: clamp(14px,1.5vw,17px) clamp(17px,2.1vw,20px) clamp(17px,2.1vw,20px);
   background: var(--color-gradient);
   border-radius: 99px;
   margin: 0 12px;
