@@ -23,7 +23,7 @@ ham.addEventListener('click', function () { //ハンバーガーメニューを�
       video1SP.style.display = 'block';
       video1SP.currentTime = 0;
       video1SP.play();
-  }, 2000);
+  }, 10000);
 });
 // closeボタン
 hamC.addEventListener('click', function () { 
@@ -88,7 +88,7 @@ Kbuttonpc.addEventListener('mouseenter', () => {
         video2PC.style.display = 'block';
         video2PC.style.opacity = '0';
 
-    }, 1000);
+    }, 10000);
 
 });
 
