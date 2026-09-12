@@ -36,6 +36,8 @@
   cursor: pointer;
 }
 .WModal {
+  container-type: size;
+  container-name: wmodal-container;
   position: fixed;
   background-color: #fff;
   transform: translateY(100%); 
@@ -77,7 +79,7 @@
 }
 .WModal_mainMedia * {
   width: auto;
-  max-height: 60vh;
+  max-height: 80cqh;
   margin: 0 auto;
 }
 .WModal_tag_items {/* modal tag */
@@ -172,6 +174,7 @@
   color: var(--color-text);
   border: solid 1px var(--color-line);
   background-color: color-mix(in srgb, var(--color-background) 90%, transparent);
+  cursor: pointer;
 }
 /* Allだけ未選択時 */
 #js-filter-all:not(:checked) + label{
@@ -266,7 +269,7 @@ input[type="checkbox"]:checked + label {
     margin: 8px 0 25px;
   }
   .WModal_mainMedia * {
-    max-height: calc(100vh - 20vh - calc(clamp(48px, 6vw, 60px) + 2*(clamp(9px, 1.11vw, 12px)) + 18px));
+    max-height: 75cqh;
   }
   /* 本文に画像があるなら.flex_wrapperをflex、ないならflexしない */
   .WModal .flex_wrapper:has(.WModal_subImgs img) {

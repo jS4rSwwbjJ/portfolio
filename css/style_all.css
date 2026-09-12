@@ -170,11 +170,7 @@ p , dl {
   background-size: 100% 1px;
   transition: background-size .2s ease-out;
 }
-.page_link a:hover {
-  background-position: bottom right;
-  background-size: 0 1px;
-  opacity: .8;
-}
+
 .page_link p {
   font-size: clamp(13px,1.6vw,18px);
   font-weight: 400;
@@ -501,7 +497,7 @@ p , dl {
   stroke-width: 1px;
 }
 
-.footer_sns {
+.footer_sns, .copy_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -521,6 +517,29 @@ p , dl {
 }
 .footer_sns li:last-child {
   border-right: none;
+}
+.footer_copy {
+  container-type: inline-size;
+  container-name: footerCopy-container;
+  max-width: calc(100vw - 32*2px);
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.footer_copy p, .copy_wrapper a {
+  font-size: 12px;
+}
+@container footerCopy-container (width >= 457px) {
+  .footer_copy p {
+    text-align: center;
+  }
+}
+.copy_wrapper {
+  padding: 0;
+  gap: 20px;
+}
+.copy_wrapper a {
+  text-decoration: underline;
 }
 .footer small {
   display: block;
@@ -579,7 +598,7 @@ p , dl {
     max-width: var(--pc_mid-width);
     width: 100%;
   }
-  #Works, #About, #Archive, #Contact {
+  #Works, #About, #Archive, #Contact, #Privacy {
     display: flex;
     justify-content: center;
   }
@@ -592,3 +611,28 @@ p , dl {
     padding-bottom: 178px;
   }
 }
+/* ホバー、タッチ操作切り替え */
+@media (hover: hover) { /* hoverが使える端末 PC想定 */
+  .page_link a:hover {
+  background-position: bottom right;
+  background-size: 0 1px;
+  opacity: .8;
+  }
+  .nav_list a:hover,.contact_btn:hover {
+    transform: translateY(-3px);
+    transition: .2s ease-out;
+    opacity: 0.7;
+  }
+  .tag_items a:hover,.footer_sns a:hover {
+    opacity: 0.7;
+  }
+}
+@media (hover: none) { /* hoverが使えない端末 スマホ想定 */
+  .page_link a:active {
+    transform: translateY(16px);
+  }
+  .nav_list a:active,.contact_btn:active,.tag_items a:active,.footer_sns a:active {
+    transform: scale(1.05);
+  }
+}
+

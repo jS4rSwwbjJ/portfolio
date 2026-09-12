@@ -214,6 +214,7 @@
   justify-content: center;
   align-items: center;
   border-top: solid 1px var(--color-line);
+  cursor: pointer;
 }
 
 
@@ -238,5 +239,17 @@
   .copyModal {
     max-width: var(--pc_mid-width);
     left: initial;
+  }
+}
+
+/* ホバー、タッチ操作切り替え */
+@media (hover: hover) { /* hoverが使える端末 PC想定 */
+  #movie-trigger:hover,.copy_btn:hover,.mailCS_btn a:hover,.contact_list_copy:hover {
+    opacity: 0.7;
+  }
+}
+@media (hover: none) { /* hoverが使えない端末 スマホ想定 */
+  #movie-trigger:active,.copy_btn:active,.mailCS_btn a:active,.contact_list_copy:active {
+    transform: scale(1.05);
   }
 }

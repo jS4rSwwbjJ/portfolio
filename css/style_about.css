@@ -143,12 +143,8 @@
 
 /* ホバー、タッチ操作切り替え */
 @media (hover: hover) { /* hoverが使える端末 PC想定 */
-  .page_link div:hover {
-    transform: translateY(16px);
-  }
+  
 }
 @media (hover: none) { /* hoverが使えない端末 スマホ想定 */
-  .page_link div:active {
-    transform: translateY(16px);
-  }
+  
 }

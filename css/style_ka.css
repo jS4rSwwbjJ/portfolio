@@ -63,3 +63,11 @@
     width: 100%;
 }
 }
+
+/* ホバー、タッチ操作切り替え */
+@media (hover: hover) { /* hoverが使える端末 PC想定 */
+  
+}
+@media (hover: none) { /* hoverが使えない端末 スマホ想定 */
+  
+}
