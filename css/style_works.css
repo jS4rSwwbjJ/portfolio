@@ -303,7 +303,7 @@ input[type="checkbox"]:checked + label {
   .page_link div:active {
     transform: translateY(16px);
   }
-  .WModal_trigger:active,.tag:active,.tag_list label:active {
+  .tag:active,.tag_list label:active {
     transform: scale(1.05);
   }
 }
