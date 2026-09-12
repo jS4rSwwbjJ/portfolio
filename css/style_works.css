@@ -20,7 +20,7 @@
 /*-----------------main-----------------*/
 
 /* main works */
-.works_item h3,.works_item h3 + span, .WModal_title {
+.works_item h3,.works_item h3 + span, .WModal_title, #Privacy h3 {
   font-size: clamp(19px,2.5vw,26px);
   font-weight: 500;
   color: var(--color-text);
@@ -74,6 +74,11 @@
 }
 .WModal_mainMedia video {
   width: 100%;
+}
+.WModal_mainMedia * {
+  width: auto;
+  max-height: 60vh;
+  margin: 0 auto;
 }
 .WModal_tag_items {/* modal tag */
   margin: 5px 0 22px;
@@ -206,6 +211,15 @@ input[type="checkbox"]:checked + label {
   transform: translate(0, 1px) rotate(90deg);
 }
 
+/* #Privacy */
+#Privacy h3 {
+  margin-top: 40px;
+}
+
+#Privacy a {
+  text-decoration: underline;
+}
+
 /*desctop版*/
 @media (min-width: 800px) {   
   #Works {
@@ -237,7 +251,7 @@ input[type="checkbox"]:checked + label {
   .WModal {
     transform: translateX(calc(100% + 18px)); 
     /* + 20pxでheaderとくっつけるか */
-    height: calc(100vh - calc(clamp(48px, 6vw, 60px) + 2*(clamp(9px, 1.11vw, 12px)) + 18px + 20px));
+    height: calc(100vh - calc(clamp(48px, 6vw, 60px) + 2*(clamp(9px, 1.11vw, 12px)) + 18px));
     left: inherit;
     width: 68%;
     margin-right: 18px;
@@ -250,6 +264,9 @@ input[type="checkbox"]:checked + label {
   }
   .WModal_tag_items {/* modal tag */
     margin: 8px 0 25px;
+  }
+  .WModal_mainMedia * {
+    max-height: calc(100vh - 20vh - calc(clamp(48px, 6vw, 60px) + 2*(clamp(9px, 1.11vw, 12px)) + 18px));
   }
   /* 本文に画像があるなら.flex_wrapperをflex、ないならflexしない */
   .WModal .flex_wrapper:has(.WModal_subImgs img) {
@@ -274,9 +291,17 @@ input[type="checkbox"]:checked + label {
   .page_link div:hover {
     transform: translateY(16px);
   }
+  .WModal_trigger:hover, .tag:hover,.tag_list label:hover {
+    opacity: 0.7;
+  }
+
 }
 @media (hover: none) { /* hoverが使えない端末 スマホ想定 */
   .page_link div:active {
     transform: translateY(16px);
   }
+  .WModal_trigger:active,.tag:active,.tag_list label:active {
+    transform: scale(1.05);
+  }
 }
+
