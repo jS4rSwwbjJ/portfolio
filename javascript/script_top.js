@@ -93,7 +93,7 @@ const copy_list_button = document.querySelector('.contact_list_copy');
 copy_list_button.addEventListener('click', (event) => {
   try {
     navigator.clipboard.writeText(
-       `■制作内容（媒体や使用期間など）
+       `■制作内容（媒体や想定している内容、近しいイメージなど）
 ■使用目的
 ■仕様、納品形態
 ■納期までのスケジュール
