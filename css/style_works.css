@@ -149,6 +149,7 @@
 }
 .tag_items {
   display: flex;
+  flex-wrap: wrap;
   gap: 11px;
   align-items: center;
 }
