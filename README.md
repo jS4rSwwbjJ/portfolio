@@ -1,4 +1,4 @@
-# Portfolio Website
+# Joon — Portfolio Website
 
 Personal portfolio website for animation, illustration, graphic design, and web projects.
 
