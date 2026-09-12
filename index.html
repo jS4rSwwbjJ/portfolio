@@ -24,6 +24,15 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@tokopent">
 
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SH19SS136K"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-SH19SS136K');
+        </script>
 
         <!--ファビコン-->
         <link rel="icon" type="image/png" sizes="48x48" href="images/00_template/favicon.png">
@@ -42,7 +51,7 @@
         <link rel="stylesheet" href="css/style_about.css">
     </head>
 
-    <body>
+    <body ontouchstart="">
         <div class="wrapper">
         <header class="header">
             <nav class="header_nav_sp sp_only" id="js-nav">
@@ -53,7 +62,7 @@
                     <figure>
                         <img src="images/00_template/logo.png" alt="ロゴ">
                     </figure>
-                    <p>/text</p>
+                    <p>/joon</p>
                 </a>
                 
                 <div class="nav_txtGroup">
@@ -362,6 +371,7 @@
             </section>
             <div class="copyModal_wrapper"><div id="js-copy-txt" class="copyModal"></div></div>
         </main>
+
         <footer class="footer">
             <div class="footer_txt">
                 <p>メインはこちら</p>
@@ -374,12 +384,21 @@
                 <li><a href="https://www.instagram.com/joon_tokopent">Instagram</a></li>
                 <li><a href="https://www.youtube.com/@joon_tokopent">YouTube</a></li>
             </ul>
-            <small>&copy; 2026 joon</small>
+            <div class="footer_copy">
+                <p>当サイトのコンテンツを無断で複製、転載、改変することをを固く禁じます。</p>
+                <p>Reproduction, reposting or modification of the content of this site is prohibited.</p>
+            </div>
+            <div class="copy_wrapper">
+                <small>&copy; 2026 joon</small>
+                <a href="/privacy">Privacy Policy</a>
+            </div>
+            
+            
         </footer>
         </div>
         <!--スクリプト-->
         <script src="javascript/script_all.js"></script>
         <script src="javascript/script_top.js"></script>
-        <!-- <script src="javascript/script_Wmodal.js"></script> -->
+        <script src="javascript/script_Wmodal.js"></script>
     </body>
 </html>
