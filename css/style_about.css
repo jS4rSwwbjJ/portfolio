@@ -76,6 +76,8 @@
 .archive_list dd {
   margin-top: 15px;
   line-height: 1.3;
+  font-size: clamp(14px, 5.336px + 1.333vw, 16px);
+  text-align: left;
 }
 
 .archive_list dt::after {
