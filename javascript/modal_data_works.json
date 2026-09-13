@@ -1,4 +1,41 @@
 [{
+    "id": 28,
+    "title": "常温/joon portfolio",
+    "mediaType": "image",
+    "mediaSrc": "images/02_works/01_smn/smn_028.webp",
+    "Wtag": [
+      "Design",
+      "PersonalWork"
+    ],
+    "Wtxt": "当サイトのデザイン、制作をしました。<br>情報が届きやすくなるよう整理し、常温らしいフラットな世界観を目指しました。",
+    "Wnote": [],
+    "WnoteY": "2026",
+    "WsubImg": [
+      "images/02_works/02_works_details/028/details01.webp",
+      "images/02_works/02_works_details/028/details02.webp",
+      "images/02_works/02_works_details/028/details03.webp"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "プロセカ「日野森雫 × ロミオとシンデレラ」ショートアニメーション",
+    "mediaType": "youtube",
+    "mediaSrc": "DO9J4csXO_U",
+    "Wtag": [
+      "Animation",
+      "Illustration",
+      "Clientwork"
+    ],
+    "Wtxt": "プロセカの「日野森雫 × ロミオとシンデレラ」ショートアニメーションを制作しました。<br> 雫さんらしい透明感と美しさに加え、楽曲に合った表情や仕草の表現を目指しました。",
+    "Wnote": ["client : Colorful Palette"],
+    "WnoteY": "2026",
+    "WsubImg": [
+      "images/02_works/02_works_details/027/details01.webp",
+      "images/02_works/02_works_details/027/details02.webp",
+      "images/02_works/02_works_details/027/details03.webp"
+    ]
+  },
+  {
     "id": 26,
     "title": "プロセカ「ペンタトニック」アニメーションMV",
     "mediaType": "youtube",
