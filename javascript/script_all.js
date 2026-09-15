@@ -7,6 +7,7 @@ const ham = document.querySelector('#js-hamburger'); //js-hamburgerの要素を�
 const hamC = document.querySelector('#js-hamburgerC');
 const nav = document.querySelector('#js-nav');
 const nav_cover = document.querySelector('#js-cover'); 
+const nav_archive_btn = document.querySelector('#js-nav_Archive'); 
 // ka
 const Kbuttonsp = document.querySelector('.target-button');
 const video1SP = document.querySelector('.Kvideo-1SP');
@@ -51,6 +52,12 @@ nav_cover.addEventListener('click', (event) => {
     video1SP.style.display = 'none';
     video2SP.style.display = 'none';
   }
+});
+
+// sp archiveボタンクリックでnav閉じる
+nav_archive_btn.addEventListener('click', function () {
+    nav.classList.remove('active');
+    nav_cover.classList.remove('active');
 });
 
 //------スクロールに応じてhedderデザインを変更------
